@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="420px"
+    android:layout_height="110px"
+    android:orientation="horizontal">
+
+    <com.adayo.systemui.windows.views.fragrance.VtpFragranceSeekBar
+        android:id="@+id/seek_bar"
+        style="@style/VtpFragranceViewGroupStyle" />
+</LinearLayout>
+
+

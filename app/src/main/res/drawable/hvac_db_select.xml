@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 未选中状态 -->
+    <item android:state_checked="false" android:drawable="@mipmap/ivi_ac_icon_ac_p" >
+<!--        <shape>-->
+<!--            &lt;!&ndash; 未选中时的背景 &ndash;&gt;-->
+<!--            <solid android:color="@color/c478BC5" />-->
+<!--            <corners android:radius="5dp" />-->
+<!--        </shape>-->
+    </item>
+
+    <!-- 选中状态 -->
+    <item android:state_checked="true" android:drawable="@mipmap/ivi_ac_icon_fragrance_n">
+<!--        <shape>-->
+<!--            &lt;!&ndash; 选中时的背景 &ndash;&gt;-->
+<!--            <solid android:color="#FF0000" />-->
+<!--            <corners android:radius="5dp" />-->
+<!--        </shape>-->
+    </item>
+</selector>

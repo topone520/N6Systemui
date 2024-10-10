@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1000px"
+    android:layout_height="440px"
+    android:layout_marginBottom="40px"
+    android:background="@drawable/comm_c2d3540_bg"
+    tools:ignore="PxUsage">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="160px">
+
+        <com.adayo.systemui.windows.views.SwitchButtonVe
+            android:id="@+id/sb_warn_switch"
+            android:layout_width="72px"
+            android:layout_height="44px"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="60px"
+            android:layout_marginTop="28px"
+            android:background="@drawable/checkbox_selector"
+            android:button="@null" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="355px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="172px"
+            android:gravity="center_vertical"
+            android:text="@string/reverse_warning_protection"
+            android:textColor="@color/hvac_title_color"
+            android:textFontWeight="500"
+            android:textSize="40px" />
+
+
+        <TextView
+            android:id="@+id/tv_more_setting"
+            android:layout_width="136px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="728px"
+            android:singleLine="true"
+            android:text="@string/screen_bluetooth_more"
+            android:textColor="@color/hvac_title_color1"
+            android:textFontWeight="400"
+            android:textSize="34px" />
+
+
+        <ImageView
+            android:id="@+id/iv_enter_more_setting"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="888px"
+            android:src="@mipmap/ivi_menu_down_icon_pull_down_n" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="161px"
+        android:background="@color/hvac_title_color1" />
+
+
+    <TextView
+        android:id="@+id/tv_select_type"
+        android:layout_width="288px"
+        android:layout_height="44px"
+        android:layout_marginStart="60px"
+        android:layout_marginTop="212px"
+        android:gravity="center_vertical"
+        android:text="@string/select_open_type"
+        android:textColor="@color/hvac_title_color1"
+        android:textFontWeight="400"
+        android:textSize="32px" />
+
+
+    <RadioGroup
+        android:id="@+id/rg_type"
+        android:layout_width="880px"
+        android:layout_height="100px"
+        android:layout_marginStart="60px"
+        android:layout_marginTop="280px"
+        android:background="@drawable/seat_message_no_select_bg"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="440px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/seat_massage_radiobutton"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/select_type_one"
+            android:textColor="@drawable/comm_radiogroup_textview_color"
+            android:textSize="34px" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="440px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/seat_massage_radiobutton"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/select_type_two"
+            android:textColor="@drawable/comm_radiogroup_textview_color"
+            android:textSize="34px" />
+
+    </RadioGroup>
+
+
+</FrameLayout>

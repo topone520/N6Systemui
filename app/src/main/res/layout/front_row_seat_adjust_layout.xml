@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="2480px"
+    android:layout_height="680px"
+    android:background="@drawable/comm_c2d3540_bg"
+    android:orientation="horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/driver_save"
+            android:layout_width="180px"
+            android:layout_height="80px"
+            android:layout_marginTop="84px"
+            android:layout_marginRight="567px"
+            android:background="@drawable/seat_message_usher"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="@drawable/hvac_text_select"
+            android:textFontWeight="400"
+            android:textSize="36px"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:layout_marginTop="60px"
+            android:text="@string/seat_main_adjust"
+            android:textColor="@color/hvac_title_color"
+            android:textFontWeight="400"
+            android:textSize="40px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="384px"
+            android:layout_height="480px"
+            android:layout_marginLeft="201px"
+            android:layout_marginTop="146px"
+            android:background="@mipmap/ivi_ac_seat_seat_left"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--        主驾驶靠背调节-->
+        <com.adayo.systemui.windows.views.seat.HorSlideView
+            android:id="@+id/driver_backrest"
+            android:layout_width="160px"
+            android:layout_height="44px"
+            android:layout_marginLeft="192px"
+            android:layout_marginTop="320px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--        主驾驶坐垫调节-->
+        <com.adayo.systemui.windows.views.seat.VerSlideView
+            android:id="@+id/driver_cushion"
+            android:layout_width="44px"
+            android:layout_height="160px"
+            android:layout_marginLeft="473px"
+            android:layout_marginBottom="104px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <com.adayo.systemui.windows.views.seat.CrossSlideView
+            android:id="@+id/driver_cross_adjust"
+            android:layout_width="160px"
+            android:layout_height="160px"
+            android:layout_marginLeft="188px"
+            android:layout_marginBottom="69px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+
+        <com.adayo.systemui.windows.views.seat.SeatMemoryView
+            android:id="@+id/driver_memory"
+            android:layout_width="360px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84px"
+            android:layout_marginRight="144px"
+            android:orientation="vertical"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.adayo.systemui.windows.views.seat.SeatUsherView
+            android:id="@+id/driver_usher"
+            android:layout_width="360px"
+            android:layout_height="100px"
+            android:layout_marginRight="144px"
+            android:layout_marginBottom="76px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="368px"
+            android:background="@color/c10ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/copilot_save"
+            android:layout_width="180px"
+            android:layout_height="80px"
+            android:layout_marginTop="84px"
+            android:layout_marginRight="483px"
+            android:background="@drawable/seat_message_usher"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="@drawable/hvac_text_select"
+            android:textFontWeight="400"
+            android:textSize="36px"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:layout_marginRight="80px"
+            android:text="@string/seat_co_adjust"
+            android:textColor="@color/hvac_title_color"
+            android:textFontWeight="400"
+            android:textSize="40px"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.adayo.systemui.windows.views.seat.SeatMemoryView
+            android:id="@+id/copilot_memory"
+            android:layout_width="360px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="144px"
+            android:layout_marginTop="84px"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.adayo.systemui.windows.views.seat.SeatUsherView
+            android:id="@+id/copilot_usher"
+            android:layout_width="360px"
+            android:layout_height="100px"
+            android:layout_marginLeft="144px"
+            android:layout_marginBottom="76px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <ImageView
+            android:layout_width="384px"
+            android:layout_height="480px"
+            android:layout_marginTop="146px"
+            android:layout_marginRight="201px"
+            android:background="@mipmap/ivi_ac_seat_seat_right"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--        副驾驶靠背调节-->
+        <com.adayo.systemui.windows.views.seat.HorSlideView
+            android:id="@+id/copilot_backrest"
+            android:layout_width="160px"
+            android:layout_height="44px"
+            android:layout_marginTop="320px"
+            android:layout_marginRight="192px"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--        副驾驶坐垫调节-->
+        <com.adayo.systemui.windows.views.seat.VerSlideView
+            android:id="@+id/copilot_cushion"
+            android:layout_width="44px"
+            android:layout_height="160px"
+            android:layout_marginRight="473px"
+            android:layout_marginBottom="104px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <com.adayo.systemui.windows.views.seat.CrossSlideView
+            android:id="@+id/copilot_cross_adjust"
+            android:layout_width="160px"
+            android:layout_height="160px"
+            android:layout_marginRight="188px"
+            android:layout_marginBottom="69px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/qs_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_qspenel"
+    tools:ignore="PxUsage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_host"
+        android:layout_width="536px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190px"
+        android:layout_marginTop="142px">
+
+        <LinearLayout
+            android:id="@+id/left_seat_layout"
+            android:layout_width="match_parent"
+            android:layout_height="190px"
+            android:background="@drawable/seat_button_white65_bg"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.adayo.systemui.windows.views.QsIconView
+                android:id="@+id/driver_wind"
+                android:layout_width="240px"
+                android:layout_height="190px"
+                android:contentDescription="@string/screen_ventilate"
+                android:clickable="true"
+                app:img_icon="@mipmap/ivi_menu_down_icon_driver_seats_ventilation_n"
+                app:tv_title="@string/screen_ventilate"
+                android:nextFocusDown="@id/driver_wheel"
+                android:nextFocusRight="@id/driver_heat"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/gridview_item_select"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="60px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="27px"
+                android:background="@color/c_25_FF" />
+
+            <com.adayo.systemui.windows.views.QsIconView
+                android:id="@+id/driver_heat"
+                android:layout_width="240px"
+                android:layout_height="190px"
+                android:layout_marginLeft="27px"
+                android:contentDescription="@string/screen_addhot"
+                android:clickable="true"
+                app:img_icon="@mipmap/ivi_menu_down_icon_driver_seats_heat_n"
+                app:tv_title="@string/screen_addhot"
+                android:nextFocusDown="@id/seat_massage"
+                android:nextFocusLeft="@id/driver_wind"
+                android:nextFocusRight="@id/brightness_adjust"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/gridview_item_select"/>
+
+        </LinearLayout>
+
+
+        <com.adayo.systemui.windows.views.QsIconView
+            android:id="@+id/driver_wheel"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginTop="56px"
+            android:contentDescription="@string/hvac_steering"
+            android:clickable="true"
+            app:img_icon="@mipmap/ivi_ac_seats_icon_wheel_hot_n"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/left_seat_layout"
+            app:tv_title="@string/hvac_steering"
+            android:nextFocusUp="@id/driver_wind"
+            android:nextFocusRight="@id/seat_massage"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gridview_item_select"/>
+
+        <com.adayo.systemui.windows.views.QsIconView
+            android:id="@+id/seat_massage"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginLeft="56px"
+            android:layout_marginTop="56px"
+            android:contentDescription="@string/hvac_massage"
+            android:clickable="true"
+            app:img_icon="@mipmap/ivi_menu_down_icon_driver_seats_massage_n"
+            app:layout_constraintStart_toEndOf="@id/driver_wheel"
+            app:layout_constraintTop_toBottomOf="@id/left_seat_layout"
+            app:tv_title="@string/hvac_massage"
+            android:nextFocusUp="@id/driver_heat"
+            android:nextFocusLeft="@id/driver_wheel"
+            android:nextFocusRight="@id/brightness_adjust"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gridview_item_select"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_seekbar"
+        android:layout_width="312px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="926px"
+        android:layout_marginTop="142px">
+
+
+        <com.adayo.systemui.windows.views.QsSeekBar
+            android:id="@+id/brightness_adjust"
+            android:layout_width="128px"
+            android:layout_height="436px"
+            android:max="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:nextFocusLeft="@id/seat_massage"
+            android:nextFocusRight="@id/volume_adjust"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gridview_item_select"/>
+
+        <ImageView
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_marginTop="340px"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@mipmap/ivi_menu_icon_brightness_n"
+            app:layout_constraintEnd_toEndOf="@id/brightness_adjust"
+            app:layout_constraintStart_toStartOf="@id/brightness_adjust"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.adayo.systemui.windows.views.QsSeekBar
+            android:id="@+id/volume_adjust"
+            android:layout_width="128px"
+            android:layout_height="436px"
+            android:layout_marginLeft="56px"
+            android:max="39"
+            app:layout_constraintStart_toEndOf="@id/brightness_adjust"
+            app:layout_constraintTop_toTopOf="parent"
+            android:nextFocusLeft="@id/brightness_adjust"
+            android:nextFocusRight="@id/profile_card_layout"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gridview_item_select"/>
+
+        <ImageView
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_marginTop="340px"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@mipmap/ivi_menu_icon_volume_n"
+            app:layout_constraintEnd_toEndOf="@id/volume_adjust"
+            app:layout_constraintStart_toStartOf="@id/volume_adjust"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_volume_edit"
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_marginTop="16px"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@mipmap/ivi_menu_down_icon_seat_adjustment_n"
+            app:layout_constraintEnd_toEndOf="@id/volume_adjust"
+            app:layout_constraintStart_toStartOf="@id/volume_adjust"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="142px"
+        android:layout_marginEnd="202px"
+        android:layout_toStartOf="@+id/cl_assistant">
+
+        <RelativeLayout
+            android:id="@+id/profile_card_layout"
+            android:layout_width="536px"
+            android:layout_height="190px"
+            android:nextFocusLeft="@id/volume_adjust"
+            android:nextFocusRight="@id/qs_hud"
+            android:nextFocusDown="@id/qs_dark"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gridview_item_select">
+
+            <TextView
+                android:id="@+id/profile_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/ivi_menu_down_image_camping_mode"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="60px"
+                android:text="@string/screen_scene_mode"
+                android:textColor="@color/c_90_FF"
+                android:textFontWeight="400"
+                android:textSize="34px" />
+
+
+            <ImageView
+                android:id="@+id/icon_profile_enable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_transparent_background"
+                android:visibility="gone" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/profile_card_subscript"-->
+<!--                android:layout_width="48px"-->
+<!--                android:layout_height="48px"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginTop="142px"-->
+<!--                android:scaleType="center"-->
+<!--                android:src="@drawable/icon_subscript" />-->
+
+        </RelativeLayout>
+
+        <com.adayo.systemui.windows.views.QsIconView
+            android:id="@+id/qs_hud"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginLeft="592px"
+            android:contentDescription="@string/screen_head_display"
+            app:img_icon="@mipmap/ivi_menu_icon_hud_n"
+            app:tv_title="@string/screen_head_display"
+            android:nextFocusLeft="@id/profile_card_layout"
+            android:nextFocusRight="@id/qs_esp"
+            android:nextFocusDown="@id/qs_360"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gridview_item_select"/>
+
+        <com.adayo.systemui.windows.views.QsIconView
+            android:id="@+id/qs_esp"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginLeft="888px"
+            android:contentDescription="@string/screen_esp_off"
+            app:img_icon="@mipmap/ivi_menu_icon_esp_off_n"
+            app:tv_title="@string/screen_esp_off"
+            android:nextFocusLeft="@id/qs_hud"
+            android:nextFocusRight="@id/qs_clean"
+            android:nextFocusDown="@id/qs_lamp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gridview_item_select"/>
+
+        <com.adayo.systemui.windows.views.QsIconView
+            android:id="@+id/qs_clean"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginLeft="1184px"
+            android:contentDescription="@string/screen_jijing"
+            app:img_icon="@mipmap/ivi_menu_icon_clean_n"
+            app:tv_title="@string/screen_jijing"
+            android:nextFocusLeft="@id/qs_esp"
+            android:nextFocusRight="@id/passenger_heat"
+            android:nextFocusDown="@id/qs_screen"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gridview_item_select"/>
+
+        <com.adayo.systemui.windows.views.QsIconView
+            android:id="@+id/qs_dark"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginTop="246px"
+            android:contentDescription="@string/screen_dark_mode"
+            app:img_icon="@mipmap/ivi_menu_icon_dark_mode_n"
+            app:tv_title="@string/screen_dark_mode"
+            android:nextFocusLeft="@id/volume_adjust"
+            android:nextFocusRight="@id/qs_tailgate"
+            android:nextFocusUp="@id/profile_card_layout"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gridview_item_select"/>
+
+        <com.adayo.systemui.windows.views.QsIconView
+            android:id="@+id/qs_tailgate"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginLeft="296px"
+            android:layout_marginTop="246px"
+            android:contentDescription="@string/screen_tailgate"
+            app:img_icon="@mipmap/ivi_setting_rear_tailgate_icon_on_n"
+            app:tv_title="@string/screen_tailgate"
+            android:nextFocusLeft="@id/qs_dark"
+            android:nextFocusRight="@id/qs_360"
+            android:nextFocusUp="@id/profile_card_layout"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gridview_item_select"/>
+
+        <com.adayo.systemui.windows.views.QsIconView
+            android:id="@+id/qs_360"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginLeft="592px"
+            android:layout_marginTop="246px"
+            android:contentDescription="@string/screen_360"
+            app:img_icon="@mipmap/ivi_menu_icon_360_n"
+            app:tv_title="@string/screen_360"
+            android:nextFocusLeft="@id/qs_tailgate"
+            android:nextFocusRight="@id/qs_lamp"
+            android:nextFocusUp="@id/qs_hud"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gridview_item_select"/>
+
+        <com.adayo.systemui.windows.views.QsIconView
+            android:id="@+id/qs_lamp"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginLeft="888px"
+            android:layout_marginTop="246px"
+            android:contentDescription="@string/screen_lamp"
+            app:img_icon="@mipmap/ivi_menu_icon_lamp_n"
+            app:tv_title="@string/screen_lamp"
+            android:nextFocusLeft="@id/qs_360"
+            android:nextFocusRight="@id/qs_screen"
+            android:nextFocusUp="@id/qs_esp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gridview_item_select"/>
+
+        <com.adayo.systemui.windows.views.QsIconView
+            android:id="@+id/qs_screen"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginLeft="1184px"
+            android:layout_marginTop="246px"
+            android:contentDescription="@string/screen_shutdown"
+            app:img_icon="@mipmap/ivi_menu_icon_screen_n"
+            app:tv_title="@string/screen_shutdown"
+            android:nextFocusLeft="@id/qs_lamp"
+            android:nextFocusRight="@id/passenger_massage"
+            android:nextFocusUp="@id/qs_clean"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gridview_item_select"/>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_assistant"
+        android:layout_width="536px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="142px"
+        android:layout_marginEnd="202px"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/right_seat_layout"
+            android:layout_width="match_parent"
+            android:layout_height="190px"
+            android:background="@drawable/seat_button_white65_bg"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.adayo.systemui.windows.views.QsIconView
+                android:id="@+id/passenger_heat"
+                android:layout_width="240px"
+                android:layout_height="190px"
+                android:contentDescription="@string/screen_addhot"
+                app:img_icon="@mipmap/ivi_menu_down_icon_copilot_seats_heat_n"
+                app:tv_title="@string/screen_addhot"
+                android:nextFocusLeft="@id/qs_clean"
+                android:nextFocusRight="@id/passenger_wind"
+                android:nextFocusDown="@id/passenger_massage"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/gridview_item_select"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="60px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="28px"
+                android:background="@color/c_25_FF" />
+
+            <com.adayo.systemui.windows.views.QsIconView
+                android:id="@+id/passenger_wind"
+                android:layout_width="240px"
+                android:layout_height="190px"
+                android:layout_marginLeft="27px"
+                android:contentDescription="@string/screen_ventilate"
+                app:img_icon="@mipmap/ivi_menu_down_icon_copilot_seats_ventilation_n"
+                app:tv_title="@string/screen_ventilate"
+                android:nextFocusLeft="@id/passenger_heat"
+                android:nextFocusRight="@id/driver_wheel"
+                android:nextFocusDown="@id/passenger_adjust"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/gridview_item_select"/>
+
+        </LinearLayout>
+
+        <com.adayo.systemui.windows.views.QsIconView
+            android:id="@+id/passenger_massage"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginTop="56px"
+            android:contentDescription="@string/screen_massage"
+            app:img_icon="@mipmap/ivi_menu_down_icon_copilot_seats_massage_n"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/right_seat_layout"
+            app:tv_title="@string/screen_massage"
+            android:nextFocusLeft="@id/qs_screen"
+            android:nextFocusRight="@id/qs_screen"
+            android:nextFocusUp="@id/passenger_adjust"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gridview_item_select"/>
+
+        <com.adayo.systemui.windows.views.QsIconView
+            android:id="@+id/passenger_adjust"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginLeft="56px"
+            android:layout_marginTop="56px"
+            android:contentDescription="@string/screen_massage"
+            app:img_icon="@mipmap/ivi_menu_down_icon_copilot_adjustment_n"
+            app:layout_constraintStart_toEndOf="@id/passenger_massage"
+            app:layout_constraintTop_toBottomOf="@id/right_seat_layout"
+            app:tv_title="@string/hvac_adjust"
+            android:nextFocusLeft="@id/passenger_massage"
+            android:nextFocusUp="@id/passenger_wind"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gridview_item_select"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_edit_card"
+        android:layout_width="1722px"
+        android:layout_height="592px"
+        android:layout_marginLeft="180px"
+        android:layout_marginTop="56px"
+        android:background="@drawable/screen_pop_bg"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="516px"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="77px"
+                android:layout_height="88px"
+                android:layout_marginTop="116px"
+                android:src="@mipmap/ivi_menu_icon_hand" />
+
+            <TextView
+                android:layout_width="360px"
+                android:layout_height="126px"
+                android:layout_marginTop="46px"
+                android:text="将待选卡片拖至快捷卡片区\n替换卡片，拖动卡片可互换\n位置"
+                android:textColor="#BCBEC2"
+                android:textFontWeight="400"
+                android:textSize="28px" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_enter"
+                android:layout_width="360px"
+                android:layout_height="80px"
+                android:layout_marginTop="58px"
+                android:background="@drawable/screen_bt_bg"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="#FEFEFE"
+                android:textFontWeight="500"
+                android:textSize="34px" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="516px"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="436px"
+                android:layout_marginTop="78px"
+                android:layout_marginEnd="78px"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.adayo.systemui.windows.views.QsIconView
+                    android:id="@+id/qs_rear"
+                    android:layout_width="240px"
+                    android:layout_height="190px"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:img_icon="@mipmap/ivi_menu_icon_rear_panel_n"
+                    app:tv_title="@string/screen_rear" />
+
+                <com.adayo.systemui.windows.views.QsIconView
+                    android:id="@+id/qs_pedestrian"
+                    android:layout_width="240px"
+                    android:layout_height="190px"
+                    android:layout_below="@+id/qs_rear"
+                    android:layout_marginTop="56px"
+                    app:img_icon="@mipmap/ivi_menu_icon_pedestrian_warning_n"
+                    app:tv_title="@string/screen_pedestrian" />
+
+                <com.adayo.systemui.windows.views.QsIconView
+                    android:id="@+id/qs_slope"
+                    android:layout_width="240px"
+                    android:layout_height="190px"
+                    android:layout_marginStart="56px"
+                    android:layout_toEndOf="@+id/qs_rear"
+                    app:img_icon="@mipmap/ivi_menu_icon_slope_n"
+                    app:tv_title="@string/screen_slope" />
+
+                <com.adayo.systemui.windows.views.QsIconView
+                    android:id="@+id/qs_radar"
+                    android:layout_width="240px"
+                    android:layout_height="190px"
+                    android:layout_below="@+id/qs_slope"
+                    android:layout_marginStart="56px"
+                    android:layout_marginTop="56px"
+                    android:layout_toEndOf="@+id/qs_pedestrian"
+                    app:img_icon="@mipmap/ivi_menu_icon_radar_n"
+                    app:tv_title="@string/screen_radar" />
+
+                <com.adayo.systemui.windows.views.QsIconView
+                    android:id="@+id/qs_atmosphere"
+                    android:layout_width="240px"
+                    android:layout_height="190px"
+                    android:layout_marginStart="56px"
+                    android:layout_toEndOf="@+id/qs_slope"
+                    app:img_icon="@mipmap/ivi_menu_icon_atmosphere_light_n"
+                    app:tv_title="@string/screen_atmosphere" />
+
+                <com.adayo.systemui.windows.views.QsIconView
+                    android:id="@+id/qs_lock"
+                    android:layout_width="240px"
+                    android:layout_height="190px"
+                    android:layout_below="@+id/qs_rear"
+                    android:layout_marginStart="56px"
+                    android:layout_marginTop="56px"
+                    android:layout_toEndOf="@+id/qs_radar"
+                    app:img_icon="@mipmap/ivi_menu_icon_ivi_lock_n"
+                    app:tv_title="@string/screen_lock" />
+
+                <com.adayo.systemui.windows.views.QsIconView
+                    android:id="@+id/qs_child"
+                    android:layout_width="240px"
+                    android:layout_height="190px"
+                    android:layout_marginStart="56px"
+                    android:layout_toEndOf="@+id/qs_lock"
+                    app:img_icon="@mipmap/ivi_menu_icon_child_lock_n"
+                    app:tv_title="@string/screen_child" />
+
+
+                <com.adayo.systemui.windows.views.QsIconView
+                    android:id="@+id/qs_skylight"
+                    android:layout_width="240px"
+                    android:layout_height="190px"
+                    android:layout_below="@+id/qs_rear"
+                    android:layout_marginStart="56px"
+                    android:layout_marginTop="56px"
+                    android:layout_toEndOf="@+id/qs_lock"
+                    app:img_icon="@mipmap/ivi_menu_icon_skylight_n"
+                    app:tv_title="@string/screen_skylight" />
+
+                <com.adayo.systemui.windows.views.QsIconView
+                    android:id="@+id/qs_sunroof"
+                    android:layout_width="240px"
+                    android:layout_height="190px"
+                    android:layout_marginStart="56px"
+                    android:layout_toEndOf="@+id/qs_child"
+                    app:img_icon="@mipmap/ivi_menu_icon_skylight_n"
+                    app:tv_title="@string/sunroof" />
+
+                <com.adayo.systemui.windows.views.QsIconView
+                    android:id="@+id/qs_cruise"
+                    android:layout_width="240px"
+                    android:layout_height="190px"
+                    android:layout_below="@+id/qs_rear"
+                    android:layout_marginStart="56px"
+                    android:layout_marginTop="56px"
+                    android:layout_toEndOf="@+id/qs_skylight"
+                    app:img_icon="@mipmap/ivi_menu_icon_skylight_n"
+                    app:tv_title="@string/intelligent_cruise" />
+
+                <com.adayo.systemui.windows.views.QsIconView
+                    android:id="@+id/qs_warning"
+                    android:layout_width="240px"
+                    android:layout_height="190px"
+                    android:layout_marginStart="56px"
+                    android:layout_toEndOf="@+id/qs_sunroof"
+                    app:img_icon="@mipmap/ivi_menu_icon_skylight_n"
+                    app:tv_title="@string/lane_change_warning" />
+
+                <com.adayo.systemui.windows.views.QsIconView
+                    android:id="@+id/qs_assist"
+                    android:layout_width="240px"
+                    android:layout_height="190px"
+                    android:layout_below="@+id/qs_rear"
+                    android:layout_marginStart="56px"
+                    android:layout_marginTop="56px"
+                    android:layout_toEndOf="@+id/qs_cruise"
+                    app:img_icon="@mipmap/ivi_menu_icon_skylight_n"
+                    app:tv_title="@string/lane_Assist" />
+
+                <com.adayo.systemui.windows.views.QsIconView
+                    android:id="@+id/qs_protection"
+                    android:layout_width="240px"
+                    android:layout_height="190px"
+                    android:layout_marginStart="56px"
+                    android:layout_toEndOf="@+id/qs_assist"
+                    app:img_icon="@mipmap/ivi_menu_icon_skylight_n"
+                    app:tv_title="@string/reverse_warning_protection" />
+
+                <com.adayo.systemui.windows.views.QsIconView
+                    android:id="@+id/qs_collision"
+                    android:layout_width="240px"
+                    android:layout_height="190px"
+                    android:layout_below="@+id/qs_rear"
+                    android:layout_marginStart="56px"
+                    android:layout_marginTop="56px"
+                    android:layout_toEndOf="@+id/qs_assist"
+                    app:img_icon="@mipmap/ivi_menu_icon_skylight_n"
+                    app:tv_title="@string/anti_collision_reminder" />
+
+                <com.adayo.systemui.windows.views.QsIconView
+                    android:id="@+id/qs_prevention"
+                    android:layout_width="240px"
+                    android:layout_height="190px"
+                    android:layout_marginStart="56px"
+                    android:layout_toEndOf="@+id/qs_protection"
+                    app:img_icon="@mipmap/ivi_menu_icon_skylight_n"
+                    app:tv_title="@string/rear_collision_prevention_reminder" />
+            </RelativeLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

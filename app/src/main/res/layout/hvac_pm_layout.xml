@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240px"
+    android:layout_height="190px">
+
+    <RelativeLayout
+        android:id="@+id/relative_mild"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_self_mild"
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40px"
+            android:src="@mipmap/ivi_ac_icon_air_quality" />
+
+        <TextView
+            android:id="@+id/tv_pm_mild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_self_mild"
+            android:layout_marginLeft="52px"
+            android:text="@string/hvac_pm"
+            android:textColor="@color/hvac_title_color"
+            android:textFontWeight="400"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tv_self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_pm_mild"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/tv_pm_mild"
+            android:text="@string/status_pm_excellent"
+            android:textColor="@color/c41AC83"
+            android:textFontWeight="400"
+            android:textSize="32px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_severe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_self_severe"
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18px"
+            android:src="@mipmap/ivi_ac_icon_air_quality" />
+
+        <TextView
+            android:id="@+id/tv_pm_severe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_self_severe"
+            android:layout_centerHorizontal="true"
+            android:text="@string/hvac_pm"
+            android:textColor="@color/hvac_title_color"
+            android:textFontWeight="400"
+            android:textSize="32px" />
+
+
+        <TextView
+            android:id="@+id/tv_level_severe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_pm_severe"
+            android:layout_centerHorizontal="true"
+            android:text="@string/status_pm_moderate"
+            android:textColor="@color/c_b9_45_3c"
+            android:textFontWeight="400"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="2268px"
+    android:layout_height="640px"
+    android:layout_marginBottom="40px"
+    android:background="@drawable/comm_c2d3540_bg"
+    tools:ignore="PxUsage">
+
+    <TextView
+        android:id="@+id/tv_scene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="64px"
+        android:layout_marginTop="52px"
+        android:text="@string/screen_scene_mode"
+        android:textColor="@color/hvac_title_color"
+        android:textFontWeight="400"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/tv_scene_more_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="1984px"
+        android:layout_marginTop="64px"
+        android:layout_toStartOf="@id/iv_scene_sel_more"
+        android:text="@string/screen_bluetooth_more"
+        android:textColor="@color/hvac_title_color"
+        android:textFontWeight="400"
+        android:textSize="34px"
+        tools:ignore="RelativeOverlap" />
+
+
+    <ImageView
+        android:id="@+id/iv_scene_sel_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2114px"
+        android:layout_marginTop="63px"
+        android:src="@mipmap/ivi_menu_down_icon_pull_down_n"
+        tools:ignore="ContentDescription" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_dialog_scene"
+        android:layout_width="2152px"
+        android:layout_height="450px"
+        android:layout_marginLeft="58px"
+        android:layout_marginTop="154px" />
+
+</FrameLayout>

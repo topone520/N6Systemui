@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1264px"
+    android:layout_height="440px"
+    android:layout_marginBottom="140px"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_qs_bg"
+    tools:ignore="PxUsage">
+
+    <TextView
+        android:id="@+id/pop_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:textSize="40px"
+        android:textFontWeight="400"
+        android:textColor="@color/hvac_white"
+        android:text="@string/seat_main_massage_mode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+    <Button
+        android:id="@+id/pulse_mode_btn"
+        android:layout_width="246px"
+        android:layout_height="80px"
+        android:layout_marginTop="160px"
+        android:layout_marginLeft="80px"
+        android:text="@string/seat_move1"
+        android:textColor="@drawable/selector_qs_text"
+        android:background="@drawable/selector_qs_bg"
+        android:textSize="34px"
+        android:textFontWeight="500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/wave_mode_btn"
+        android:layout_width="246px"
+        android:layout_height="80px"
+        android:layout_marginLeft="40px"
+        android:text="@string/seat_move2"
+        android:textColor="@drawable/selector_qs_text"
+        android:background="@drawable/selector_qs_bg"
+        android:textSize="34px"
+        android:textFontWeight="500"
+        app:layout_constraintStart_toEndOf="@id/pulse_mode_btn"
+        app:layout_constraintTop_toTopOf="@id/pulse_mode_btn"
+        />
+
+    <Button
+        android:id="@+id/cat_walk_mode_btn"
+        android:layout_width="246px"
+        android:layout_height="80px"
+        android:layout_marginLeft="40px"
+        android:text="@string/seat_move3"
+        android:textColor="@drawable/selector_qs_text"
+        android:background="@drawable/selector_qs_bg"
+        android:textSize="34px"
+        android:textFontWeight="500"
+        app:layout_constraintStart_toEndOf="@id/wave_mode_btn"
+        app:layout_constraintTop_toTopOf="@id/pulse_mode_btn"
+        />
+
+    <Button
+        android:id="@+id/single_row_mode_btn"
+        android:layout_width="246px"
+        android:layout_height="80px"
+        android:layout_marginLeft="40px"
+        android:text="@string/seat_move4"
+        android:textColor="@drawable/selector_qs_text"
+        android:background="@drawable/selector_qs_bg"
+        android:textSize="34px"
+        android:textFontWeight="500"
+        app:layout_constraintStart_toEndOf="@id/cat_walk_mode_btn"
+        app:layout_constraintTop_toTopOf="@id/pulse_mode_btn"
+        />
+
+    <Button
+        android:id="@+id/cross_mode_btn"
+        android:layout_width="246px"
+        android:layout_height="80px"
+        android:text="@string/seat_move5"
+        android:layout_marginTop="40px"
+        android:textColor="@drawable/selector_qs_text"
+        android:background="@drawable/selector_qs_bg"
+        android:textSize="34px"
+        android:textFontWeight="500"
+        app:layout_constraintStart_toStartOf="@id/pulse_mode_btn"
+        app:layout_constraintTop_toBottomOf="@id/pulse_mode_btn"
+        />
+
+    <Button
+        android:id="@+id/dish_mode_btn"
+        android:layout_width="246px"
+        android:layout_height="80px"
+        android:text="@string/seat_move6"
+        android:layout_marginLeft="40px"
+        android:textColor="@drawable/selector_qs_text"
+        android:background="@drawable/selector_qs_bg"
+        android:textSize="34px"
+        android:textFontWeight="500"
+        app:layout_constraintStart_toEndOf="@id/cross_mode_btn"
+        app:layout_constraintTop_toTopOf="@id/cross_mode_btn"
+        />
+
+    <Button
+        android:id="@+id/waist_mode_btn"
+        android:layout_width="246px"
+        android:layout_height="80px"
+        android:text="@string/seat_move7"
+        android:layout_marginLeft="40px"
+        android:textColor="@drawable/selector_qs_text"
+        android:background="@drawable/selector_qs_bg"
+        android:textSize="34px"
+        android:textFontWeight="500"
+        app:layout_constraintStart_toEndOf="@id/dish_mode_btn"
+        app:layout_constraintTop_toTopOf="@id/cross_mode_btn"
+        />
+
+    <Button
+        android:id="@+id/snake_mode_btn"
+        android:layout_width="246px"
+        android:layout_height="80px"
+        android:text="@string/seat_move8"
+        android:layout_marginLeft="40px"
+        android:textColor="@drawable/selector_qs_text"
+        android:background="@drawable/selector_qs_bg"
+        android:textSize="34px"
+        android:textFontWeight="500"
+        app:layout_constraintStart_toEndOf="@id/waist_mode_btn"
+        app:layout_constraintTop_toTopOf="@id/cross_mode_btn"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

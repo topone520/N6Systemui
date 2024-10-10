@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1720px"
+    android:layout_height="860px"
+    android:background="@mipmap/vtp_ac_pop2160_air_management">
+</RelativeLayout>

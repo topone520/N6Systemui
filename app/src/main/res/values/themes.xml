@@ -1,0 +1,204 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.N6SystemUI" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/hvac_white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="HVACCheckbox120">
+        <item name="android:textSize">24px</item>
+        <item name="android:layout_width">120px</item>
+        <item name="android:layout_height">80px</item>
+        <item name="android:background">@drawable/check_hvac_homepage_bot_select</item>
+        <item name="android:textColor">@color/hvac_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="HVACCheckbox56">
+        <item name="android:layout_width">56px</item>
+        <item name="android:layout_height">56px</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="HVACCheckbox256">
+
+        <item name="android:textSize">30px</item>
+        <item name="android:layout_width">256px</item>
+        <item name="android:layout_height">104px</item>
+        <item name="android:background">@drawable/check_256_select</item>
+        <item name="android:textColor">@color/hvac_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="HvacIntellDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@drawable/comm_c2d3540_bg</item> <!-- 自定义对话框的背景 -->
+    </style>
+
+    <style name="DialogAnimationEnter">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+    </style>
+
+    <style name="DialogAnimationExit">
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
+
+
+    <style name="HvacWrsDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 设置窗口背景为透明 -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item> <!-- 去除窗口内容覆盖 -->
+        <item name="android:windowNoTitle">true</item> <!-- 去除标题栏 -->
+    </style>
+
+
+    <declare-styleable name="EHorizontalSelectedView">
+        <attr name="otherTextSize" format="dimension" />
+        <attr name="selectTextSize" format="dimension" />
+        <attr name="seeSize" format="integer" />
+        <attr name="selectColor" format="color" />
+        <attr name="otherColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyPickerView">
+        <attr name="epvTextSize" format="dimension" />
+        <attr name="epvTextColor" format="color" />
+        <attr name="epvTextPadding" format="dimension" />
+        <attr name="epvTextMaxScale" format="float" />
+        <attr name="epvTextMinAlpha" format="float" />
+        <attr name="epvRecycleMode" format="boolean" />
+        <attr name="epvMaxShowNum" format="integer" />
+        <attr name="epvAlign">
+            <enum name="start" value="0" />
+            <enum name="center" value="1" />
+            <enum name="end" value="2" />
+        </attr>
+        <attr name="epvShowSymbol" format="boolean" />
+        <attr name="epvSymbolText" format="string" />
+    </declare-styleable>
+
+
+
+
+
+    <declare-styleable name="VerticalSeekBar">
+        <attr name="button_strock_width" format="dimension" />
+        <attr name="button_width" format="dimension" />
+        <attr name="progressbar_strock_width" format="dimension" />
+        <attr name="thumb_strock_width" format="dimension" />
+        <attr name="thumb_width" format="dimension" />
+        <attr name="end_padding" format="dimension" />
+        <attr name="progressbar_color" format="color" />
+        <attr name="progressbar_on_color" format="color" />
+        <attr name="thumb_color" format="color" />
+        <attr name="Horitation" format="boolean" />
+        <attr name="isReverse" format="boolean" />
+    </declare-styleable>
+
+
+    <style name="SEATImageViewComm">
+        <item name="android:layout_width">56px</item>
+        <item name="android:layout_height">56px</item>
+        <item name="android:layout_marginLeft">92px</item>
+        <item name="android:layout_marginTop">40px</item>
+    </style>
+
+    <style name="SEATTextViewComm">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30px</item>
+        <item name="android:textFontWeight">500</item>
+    </style>
+
+
+    <style name="FragranceViewGroupStyle">
+        <item name="android:layout_width">520px</item>
+        <item name="android:layout_height">120px</item>
+    </style>
+
+    <style name="VtpFragranceViewGroupStyle">
+        <item name="android:layout_width">420px</item>
+        <item name="android:layout_height">100px</item>
+    </style>
+
+    <style name="FragranceTitleStyle">
+        <item name="android:textSize">40px</item>
+        <item name="android:textFontWeight">300</item>
+        <item name="android:layout_marginLeft">58px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">34px</item>
+        <item name="android:layout_marginBottom">34px</item>
+        <item name="android:textColor">@color/hvac_white</item>
+    </style>
+
+    <style name="FragranceEditTextTitleStyle">
+        <item name="android:visibility">gone</item>
+        <item name="android:textSize">40px</item>
+        <item name="android:textFontWeight">300</item>
+        <item name="android:layout_marginLeft">58px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">34px</item>
+        <item name="android:layout_marginBottom">34px</item>
+        <item name="android:textColor">@color/hvac_white</item>
+        <item name="android:hint">@string/input_fragrance_hint_name</item>
+        <item name="maxLines">1</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="singleLine">true</item>
+        <item name="android:inputType">textNoSuggestions</item>
+    </style>
+
+    <style name="FragranceConcentrationStyle">
+        <item name="android:textSize">40px</item>
+        <item name="android:textFontWeight">300</item>
+        <item name="android:layout_marginRight">60px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">34px</item>
+        <item name="android:layout_marginBottom">34px</item>
+        <item name="android:textColor">@color/white70</item>
+    </style>
+
+    <style name="SeatAdjustButtonStyle">
+        <item name="android:layout_height">100px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">22px</item>
+        <item name="android:paddingBottom">22px</item>
+    </style>
+
+    <style name="SeatMassageRadioButtonStyle">
+        <item name="android:layout_width">276px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">34px</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="VtpNavigationImageViewStyle">
+        <item name="android:layout_width">56px</item>
+        <item name="android:layout_height">56px</item>
+        <item name="android:layout_marginTop">32px</item>
+        <item name="android:layout_marginBottom">32px</item>
+    </style>
+
+    <style name="DialogAnimationSlideUp">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+
+</resources>

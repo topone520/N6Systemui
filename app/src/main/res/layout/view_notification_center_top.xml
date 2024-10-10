@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="wrap_content"
+    android:layout_height="160px"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bg_message_center_top"
+    android:minWidth="600px"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_top_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:maxLines="1"
+        android:minWidth="600px"
+        android:paddingHorizontal="80px"
+        android:textColor="@color/hvac_white"
+        android:textSize="36px"
+        tools:text="圣诞快乐，愿你生活充满幸福和欢笑" />
+
+</LinearLayout>

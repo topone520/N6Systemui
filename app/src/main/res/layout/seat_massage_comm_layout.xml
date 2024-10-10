@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_massage"
+    android:layout_width="240px"
+    android:layout_height="190px"
+    android:background="@drawable/seat_button_white45_bg">
+
+    <ImageView
+        android:id="@+id/iv_massage"
+        style="@style/SEATImageViewComm" />
+
+    <TextView
+        android:id="@+id/tv_massage"
+        style="@style/SEATTextViewComm"
+        android:layout_below="@+id/iv_massage"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/hvac_massage"
+        android:text="@string/hvac_massage" />
+
+</RelativeLayout>

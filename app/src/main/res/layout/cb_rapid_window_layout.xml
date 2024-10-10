@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="800px"
+    android:layout_height="440px"
+    android:background="@drawable/comm_c2d3540_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:text="@string/rapid_temperature_control_title"
+        android:textColor="@color/hvac_title_color"
+        android:textFontWeight="400"
+        android:textSize="40px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/rapid_start_content1"
+        android:textColor="@color/hvac_title_color1"
+        android:textSize="32px" />
+
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="340px"
+        android:layout_height="80px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40px"
+        android:layout_marginBottom="40px"
+        android:background="@drawable/comm_c4972b8_bg"
+        android:contentDescription="@string/rapid_start"
+        android:gravity="center"
+        android:text="@string/rapid_start"
+        android:textColor="@color/hvac_white"
+        android:textFontWeight="400"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="340px"
+        android:layout_height="80px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="40px"
+        android:layout_marginBottom="40px"
+        android:background="@drawable/hvac_button_bg"
+        android:contentDescription="@string/rapid_close"
+        android:gravity="center"
+        android:text="@string/rapid_close"
+        android:textColor="@color/hvac_title_color"
+        android:textFontWeight="400"
+        android:textSize="34px" />
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ivi_ac_fragrance_bg_bule1"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="1060px"
+        android:background="@mipmap/vtp_ac_fragrance_meditationi_font"/>
+</RelativeLayout>

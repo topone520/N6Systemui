@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.adayo.systemui.windows.views.BlurTransitionView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1800px"
+    android:layout_height="560px"
+    android:background="@drawable/shape_applist_bg"
+    tools:ignore="PxUsage">
+
+    <RelativeLayout
+        android:id="@+id/rl_app_recent"
+        android:layout_width="129px"
+        android:layout_height="424px"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="85px">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_float"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusRight="@+id/dialog_applist"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/menu_recently"
+            android:textColor="#66FFFFFF"
+            android:textFontWeight="400"
+            android:textSize="32px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_app_edit"
+        android:layout_width="204px"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="40px"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="70.83px"
+            android:layout_height="70.53px"
+            android:layout_marginStart="53px"
+            android:layout_marginTop="96px"
+            android:src="@mipmap/ivi_home_allapp_right_edit_icon" />
+
+        <TextView
+            android:layout_width="206px"
+            android:layout_height="84px"
+            android:layout_marginTop="217px"
+            android:gravity="center"
+            android:text="@string/menu_edit"
+            android:textColor="#B3FFFFFF"
+            android:textFontWeight="400"
+            android:textSize="28px" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_edit_enter"
+            android:layout_width="204px"
+            android:layout_height="80px"
+            android:layout_marginTop="423px"
+            app:cardBackgroundColor="#4972B8"
+            app:cardCornerRadius="8px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/complete"
+                android:textColor="#FFFFFF"
+                android:textFontWeight="500"
+                android:textSize="34px" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="424px"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="284px"
+        android:background="#D8D8D8" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="560px"
+        android:layout_marginStart="284px">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dialog_applist"
+            android:layout_width="1440px"
+            android:layout_height="448px"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@+id/rv_float"/>
+
+        <LinearLayout
+            android:id="@+id/dialog_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24px"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+</com.adayo.systemui.windows.views.BlurTransitionView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_ventilate"
+    android:layout_width="240px"
+    android:layout_height="190px">
+
+    <ImageView
+        android:id="@+id/iv_ventilate"
+        style="@style/SEATImageViewComm" />
+
+    <TextView
+        android:id="@+id/tv_ventilate"
+        style="@style/SEATTextViewComm"
+        android:layout_below="@+id/iv_ventilate"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/hvac_ventilate"
+        android:text="@string/hvac_ventilate" />
+
+
+</RelativeLayout>

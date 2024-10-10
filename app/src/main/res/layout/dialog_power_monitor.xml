@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="720px"
+    android:layout_height="360px"
+    android:background="@drawable/power_monitor_bg"
+    tools:ignore="PxUsage">
+    <TextView
+        android:layout_width="640px"
+        android:layout_height="100px"
+        android:layout_marginTop="70px"
+        android:layout_marginStart="40px"
+        android:gravity="center"
+        android:text="@string/tv_power_message"
+        android:textSize="36px"
+        android:textColor="#1E293D"
+        android:textFontWeight="400"/>
+
+    <LinearLayout
+        android:id="@+id/ll_enter"
+        android:layout_width="300px"
+        android:layout_height="80px"
+        android:layout_marginTop="240px"
+        android:layout_marginStart="40px"
+        android:background="@drawable/power_monitor_enter_bg"
+        >
+        <TextView
+            android:id="@+id/tv_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16px"
+            android:layout_marginStart="75px"
+            android:textSize="34px"
+            android:textColor="#FFFFFF"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_canel"
+        android:layout_width="300px"
+        android:layout_height="80px"
+        android:layout_marginTop="240px"
+        android:layout_marginStart="380px"
+        android:background="@drawable/power_monitor_canel_bg"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16px"
+            android:layout_marginStart="116px"
+            android:text="@string/cancel_text"
+            android:textSize="34px"
+            android:textColor="#1E293D"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

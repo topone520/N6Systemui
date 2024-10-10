@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240px"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="240px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/seat_adjust_bg"
+        android:orientation="vertical"
+        android:padding="10px">
+
+        <RelativeLayout
+            android:id="@+id/re_set_one"
+            android:layout_width="match_parent"
+            android:layout_height="84px"
+            android:background="@drawable/comm_c478bc5_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/HVACCheckbox56"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/ivi_ac_seats_icon_seat_p" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="38px"
+            android:layout_height="1px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10px"
+            android:background="@color/hvac_white" />
+
+        <RelativeLayout
+            android:id="@+id/re_set_two"
+            android:layout_width="match_parent"
+            android:layout_height="84px"
+            android:layout_marginTop="10px"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/HVACCheckbox56"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/ivi_ac_seats_icon_seat2_p" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="38px"
+            android:layout_height="2px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10px"
+            android:background="@color/hvac_white" />
+
+        <RelativeLayout
+            android:id="@+id/re_set_three"
+            android:layout_width="match_parent"
+            android:layout_height="84px"
+            android:layout_marginTop="10px"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/HVACCheckbox56"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/ivi_ac_seats_icon_seat3_p" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_usher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24px"
+        android:background="@drawable/seat_adjust_bg"
+        android:gravity="center"
+        android:paddingTop="26px"
+        android:paddingBottom="26px"
+        android:text="@string/seat_usher"
+        android:textColor="@color/hvac_white"
+        android:textFontWeight="400"
+        android:textSize="34px" />
+
+</LinearLayout>

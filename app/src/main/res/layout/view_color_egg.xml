@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_cover"
+        android:layout_width="880px"
+        android:layout_height="588px"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_message_center_item_1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40px"
+            android:alpha="1"
+            android:textColor="@color/hvac_white"
+            android:textSize="36px"
+            tools:text="圣诞节祝福" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32px"
+            android:alpha="0.7"
+            android:textColor="@color/hvac_white"
+            android:textSize="30px"
+            tools:text="祝你圣诞快乐，愿你的生活充满幸福和欢笑" />
+
+        <FrameLayout
+            android:layout_width="640px"
+            android:layout_height="320px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40px">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/iv_paly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ivi_video_icon_play_n" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_detail"
+        android:layout_width="1800px"
+        android:layout_height="560px"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_message_center_item_1"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48px"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="56px"
+                android:layout_height="56px"
+                android:layout_marginStart="60px">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ivi_new_icon_return_n_1" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="164px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="圣诞节祝福"
+                    android:textColor="@color/hvac_white"
+                    android:textSize="40px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_detail_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.45"
+                        android:text="2023月11月05日  16:28:36"
+                        android:textColor="@color/hvac_white"
+                        android:textSize="28px" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:textSize="30px"
+            android:layout_marginTop="40px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280px"
+            android:alpha="0.7"
+            android:textColor="@color/hvac_white"
+            tools:text="圣诞快乐，愿你的生活充满幸福和欢笑！
+祝你和你的朋友们度过一个愉快的圣诞节，享受彼此的陪伴！" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40px"
+            android:layout_marginEnd="200px"
+            android:orientation="horizontal"
+            android:paddingBottom="40px">
+
+            <ImageView
+                android:id="@+id/iv_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="80px"
+                android:layout_marginTop="80px"
+                android:layout_marginEnd="80px"
+                android:layout_marginBottom="80px"
+                android:src="@mipmap/ivi_new_icon_voice_n_1" />
+
+            <FrameLayout
+                android:id="@+id/tv_detail_content"
+                android:layout_width="1320px"
+                android:layout_height="330px"
+                android:layout_marginStart="280px"
+                android:scrollbars="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ivi_video_icon_play_n" />
+
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

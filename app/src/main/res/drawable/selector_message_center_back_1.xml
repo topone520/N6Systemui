@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/ivi_new_icon_return_p_1" android:state_pressed="true"></item>
+    <item android:drawable="@mipmap/ivi_new_icon_return_d_1" android:state_enabled="false"></item>
+    <item android:drawable="@mipmap/ivi_new_icon_return_n_1"></item>
+</selector>

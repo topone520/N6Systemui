@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/ivi_ac_seats_icon_right_seat_p" android:state_pressed="true"></item>
+    <item android:drawable="@mipmap/ivi_ac_seats_icon_right_seat_n"></item>
+</selector>

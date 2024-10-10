@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ivi_comm_day_bg">
+
+    <ImageView
+        android:id="@+id/ivi_seat_close"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_marginLeft="110px"
+        android:layout_marginTop="32px"
+        android:padding="60px"
+        android:src="@mipmap/ivi_ac_icon_close_n" />
+
+    <!--    左前-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/seat_left_front_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="330px"
+        android:layout_marginTop="184px"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linear_left_top"
+            android:layout_width="536px"
+            android:layout_height="190px"
+            android:background="@drawable/seat_button_white45_bg"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.adayo.systemui.windows.views.seat.SeatVentilateImageView
+                android:id="@+id/re_left_front_ventilate"
+                android:layout_width="240px"
+                android:layout_height="190px" />
+
+            <com.adayo.systemui.windows.views.seat.SeatHeatImageView
+                android:id="@+id/re_left_front_heat"
+                android:layout_width="240px"
+                android:layout_height="190px"
+                android:layout_marginLeft="56px" />
+        </LinearLayout>
+
+        <com.adayo.systemui.windows.views.seat.SeatSteeringImageView
+            android:id="@+id/re_left_front_steering"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginLeft="56px"
+            app:layout_constraintLeft_toRightOf="@+id/linear_left_top"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/re_left_front_adjust"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginTop="56px"
+            android:background="@drawable/seat_button_white45_bg"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_left_top">
+
+            <ImageView
+                android:id="@+id/iv_left_front_adjust"
+                style="@style/SEATImageViewComm"
+                android:background="@mipmap/ivi_menu_down_icon_driver_adjustment_n" />
+
+            <TextView
+                style="@style/SEATTextViewComm"
+                android:layout_below="@+id/iv_left_front_adjust"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/hvac_adjust"
+                android:text="@string/hvac_adjust"
+                android:textColor="@color/seat_text_color1" />
+        </RelativeLayout>
+
+        <com.adayo.systemui.windows.views.seat.SeatMassageImageView
+            android:id="@+id/re_left_front_massage"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginLeft="56px"
+            android:layout_marginTop="56px"
+            app:layout_constraintLeft_toRightOf="@+id/re_left_front_adjust"
+            app:layout_constraintTop_toBottomOf="@+id/linear_left_top" />
+
+        <RelativeLayout
+            android:id="@+id/re_left_front_heat_grep"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginLeft="56px"
+            android:layout_marginTop="56px"
+            android:background="@drawable/seat_button_white45_bg"
+            app:layout_constraintLeft_toRightOf="@+id/re_left_front_massage"
+            app:layout_constraintTop_toBottomOf="@+id/linear_left_top">
+
+            <ImageView
+                android:id="@+id/iv_left_front_heat_grep"
+                style="@style/SEATImageViewComm"
+                android:background="@mipmap/ivi_ac_icon_hot_shift_n" />
+
+            <TextView
+                android:id="@+id/tv_heat_grep"
+                style="@style/SEATTextViewComm"
+                android:layout_below="@+id/iv_left_front_heat_grep"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/seat_heat_grep"
+                android:text="@string/seat_heat_grep"
+                android:textColor="@drawable/hvac_text_select" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    左后 右后 并列-->
+    <LinearLayout
+        android:id="@+id/seat_back_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="330px"
+        android:layout_marginTop="116px"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/back_left_area"
+            android:text="@string/back_left_area"
+            android:textColor="@color/hvac_white"
+            android:textFontWeight="400"
+            android:textSize="32px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16px"
+            android:orientation="horizontal">
+
+            <com.adayo.systemui.windows.views.seat.SeatHeatImageView
+                android:id="@+id/re_left_rear_heat"
+                android:layout_width="240px"
+                android:layout_height="190px"
+                android:background="@drawable/seat_button_white45_bg" />
+
+            <com.adayo.systemui.windows.views.seat.SeatMassageImageView
+                android:id="@+id/re_left_rear_massage"
+                android:layout_width="240px"
+                android:layout_height="190px"
+                android:layout_marginLeft="56px" />
+
+            <RelativeLayout
+                android:id="@+id/re_left_rear_adjust"
+                android:layout_width="240px"
+                android:layout_height="190px"
+                android:layout_marginLeft="56px"
+                android:background="@drawable/seat_button_white45_bg"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear_left_top">
+
+                <ImageView
+                    android:id="@+id/iv_left_rear_adjust"
+                    style="@style/SEATImageViewComm"
+                    android:background="@mipmap/ivi_menu_down_icon_driver_adjustment_n" />
+
+                <TextView
+                    style="@style/SEATTextViewComm"
+                    android:layout_below="@+id/iv_left_rear_adjust"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/hvac_adjust"
+                    android:text="@string/hvac_adjust"
+                    android:textColor="@color/seat_text_color1" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32px"
+            android:contentDescription="@string/back_right_area"
+            android:text="@string/back_right_area"
+            android:textColor="@color/hvac_white"
+            android:textFontWeight="400"
+            android:textSize="32px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16px"
+            android:orientation="horizontal">
+
+            <com.adayo.systemui.windows.views.seat.SeatHeatImageView
+                android:id="@+id/re_right_rear_heat"
+                android:layout_width="240px"
+                android:layout_height="190px"
+                android:background="@drawable/seat_button_white45_bg" />
+
+            <com.adayo.systemui.windows.views.seat.SeatMassageImageView
+                android:id="@+id/re_right_rear_massage"
+                android:layout_width="240px"
+                android:layout_height="190px"
+                android:layout_marginLeft="56px" />
+
+            <RelativeLayout
+                android:id="@+id/re_right_rear_adjust"
+                android:layout_width="240px"
+                android:layout_height="190px"
+                android:layout_marginLeft="56px"
+                android:background="@drawable/seat_button_white45_bg"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear_left_top">
+
+                <ImageView
+                    android:id="@+id/iv_right_rear_adjust"
+                    style="@style/SEATImageViewComm"
+                    android:background="@mipmap/ivi_menu_down_icon_driver_adjustment_n" />
+
+                <TextView
+                    style="@style/SEATTextViewComm"
+                    android:layout_below="@+id/iv_right_rear_adjust"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/hvac_adjust"
+                    android:text="@string/hvac_adjust"
+                    android:textColor="@color/seat_text_color2" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--    中间切换，前排背景-->
+    <ImageView
+        android:id="@+id/iv_front_row_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1264px"
+        android:background="@mipmap/ivi_ac_seat_forward_bg" />
+    <!--    中间切换，后排背景-->
+    <ImageView
+        android:id="@+id/iv_area_row_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1217px"
+        android:background="@mipmap/ivi_ac_seat_back_bg"
+        android:visibility="gone" />
+    <!--    前排按钮  全关和打开后排-->
+    <TextView
+        android:id="@+id/tv_front_row_switch"
+        android:layout_width="190px"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="1986px"
+        android:layout_marginBottom="184px"
+        android:background="@drawable/comm_c99313949_bg"
+        android:contentDescription="@string/seat_all_close"
+        android:gravity="center"
+        android:text="@string/seat_all_close"
+        android:textColor="@color/hvac_title_color1"
+        android:textFontWeight="400"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/tv_back_raw"
+        android:layout_width="190px"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="1986px"
+        android:layout_marginBottom="54px"
+        android:background="@drawable/comm_c99313949_bg"
+        android:contentDescription="@string/hvac_back_raw"
+        android:gravity="center"
+        android:text="@string/hvac_back_raw"
+        android:textColor="@color/hvac_title_color1"
+        android:textFontWeight="400"
+        android:textSize="34px" />
+    <!--    后排按钮 全关和返回前排-->
+    <TextView
+        android:id="@+id/tv_area_row_switch"
+        android:layout_width="190px"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="1986px"
+        android:layout_marginBottom="184px"
+        android:background="@drawable/comm_c99313949_bg"
+        android:contentDescription="@string/seat_all_close"
+        android:gravity="center"
+        android:text="@string/seat_all_close"
+        android:textColor="@color/hvac_title_color1"
+        android:textFontWeight="400"
+        android:textSize="34px"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_front_raw"
+        android:layout_width="190px"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="1986px"
+        android:layout_marginBottom="54px"
+        android:background="@drawable/comm_c99313949_bg"
+        android:contentDescription="@string/hvac_front_raw"
+        android:gravity="center"
+        android:text="@string/hvac_front_raw"
+        android:textColor="@color/hvac_title_color1"
+        android:textFontWeight="400"
+        android:textSize="34px"
+        android:visibility="gone" />
+
+    <!--右前-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/seat_right_front_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="184px"
+        android:layout_marginRight="330px">
+
+        <LinearLayout
+            android:id="@+id/linear_right_top"
+            android:layout_width="536px"
+            android:layout_height="190px"
+            android:background="@drawable/seat_button_white45_bg"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.adayo.systemui.windows.views.seat.SeatHeatImageView
+                android:id="@+id/re_right_front_heat"
+                android:layout_width="240px"
+                android:layout_height="190px" />
+
+            <com.adayo.systemui.windows.views.seat.SeatVentilateImageView
+                android:id="@+id/re_right_front_ventilate"
+                android:layout_width="240px"
+                android:layout_height="190px"
+                android:layout_marginLeft="56px" />
+
+        </LinearLayout>
+
+        <com.adayo.systemui.windows.views.seat.SeatMassageImageView
+            android:id="@+id/re_right_front_massage"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginTop="56px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_right_top" />
+
+        <RelativeLayout
+            android:id="@+id/re_right_front_adjust"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginLeft="56px"
+            android:layout_marginTop="56px"
+            android:background="@drawable/seat_button_white45_bg"
+            app:layout_constraintLeft_toRightOf="@+id/re_right_front_massage"
+            app:layout_constraintTop_toBottomOf="@+id/linear_right_top">
+
+            <ImageView
+                android:id="@+id/iv_right_front_adjust"
+                style="@style/SEATImageViewComm"
+                android:background="@mipmap/ivi_menu_down_icon_copilot_adjustment_n" />
+
+            <TextView
+                style="@style/SEATTextViewComm"
+                android:layout_below="@+id/iv_right_front_adjust"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/hvac_adjust"
+                android:text="@string/hvac_adjust"
+                android:textColor="@color/seat_text_color2" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

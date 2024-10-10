@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="80px"
+    android:background="@drawable/seat_message_no_select_bg">
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_button_1"
+            style="@style/SeatMassageRadioButtonStyle"
+            android:textColor="@drawable/comm_radiogroup_textview_color"
+            android:background="@drawable/seat_massage_radiobutton"
+            android:checked="true"
+            android:contentDescription="@string/seat_close"
+            android:text="@string/seat_close" />
+
+        <RadioButton
+            android:id="@+id/radio_button_2"
+            style="@style/SeatMassageRadioButtonStyle"
+            android:textColor="@drawable/comm_radiogroup_textview_color"
+            android:background="@drawable/seat_massage_radiobutton"
+            android:contentDescription="@string/seat_high"
+            android:text="@string/seat_high" />
+
+        <RadioButton
+            android:id="@+id/radio_button_3"
+            style="@style/SeatMassageRadioButtonStyle"
+            android:textColor="@drawable/comm_radiogroup_textview_color"
+            android:background="@drawable/seat_massage_radiobutton"
+            android:contentDescription="@string/seat_mid"
+            android:text="@string/seat_mid" />
+
+        <RadioButton
+            android:id="@+id/radio_button_4"
+            style="@style/SeatMassageRadioButtonStyle"
+            android:textColor="@drawable/comm_radiogroup_textview_color"
+            android:background="@drawable/seat_massage_radiobutton"
+            android:contentDescription="@string/seat_low"
+            android:text="@string/seat_low" />
+    </RadioGroup>
+</RelativeLayout>

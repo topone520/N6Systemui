@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_bluetooth_item"
+    android:layout_width="672px"
+    android:layout_height="88px"
+    android:orientation="vertical"
+    tools:ignore="PxUsage">
+
+    <TextView
+        android:id="@+id/tv_item_bluetooth_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/c_CC_FF"
+        android:textFontWeight="400"
+        android:textSize="32px"
+        tools:ignore="RelativeOverlap" />
+
+    <ImageView
+        android:id="@+id/iv_item_bluetooth_icon"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ivi_menu_down_icon_connection_n"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

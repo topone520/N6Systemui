@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="1920px"
+    android:layout_height="960px"
+    android:background="@mipmap/vtp_ac_bg"
+    android:paddingLeft="100px"
+    android:paddingTop="60px"
+    android:paddingEnd="60px">
+
+    <LinearLayout
+        android:id="@+id/ll_main_wind_direction"
+        android:layout_width="500px"
+        android:layout_height="90px"
+        android:background="@drawable/bg_layout_main_wind"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/cb_wind_driver_feet"
+            style="@style/HVACCheckbox56"
+            android:layout_marginLeft="40px"
+            android:background="@drawable/vtp_cb_wind_driver_feet" />
+
+        <CheckBox
+            android:id="@+id/cb_wind_driver_face"
+            style="@style/HVACCheckbox56"
+            android:layout_marginLeft="56px"
+            android:background="@drawable/vtp_cb_wind_driver_face" />
+
+        <CheckBox
+            android:id="@+id/cb_wind_driver_defrost"
+            style="@style/HVACCheckbox56"
+            android:layout_marginLeft="56px"
+            android:background="@drawable/vtp_cb_wind_driver_defrost" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="24px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="32px"
+            android:background="@color/c1AFFFFFF" />
+
+        <TextView
+            android:id="@+id/tv_driver_blow"
+            android:layout_width="120px"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12px"
+            android:gravity="center"
+            android:text="@string/hvac_direct_blow"
+            android:textColor="@color/c5390e5"
+            android:textSize="30px" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_win_speed_adjust_view_direction"
+        android:layout_width="680px"
+        android:layout_height="90px"
+        android:background="@drawable/bg_layout_main_wind"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@id/ll_co_wind_direction"
+        app:layout_constraintStart_toEndOf="@id/ll_main_wind_direction"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.adayo.systemui.windows.views.hvac.HvacWinSpeedAdjustView
+            android:id="@+id/win_speed_adjust_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_co_wind_direction"
+        android:layout_width="500px"
+        android:layout_height="90px"
+        android:background="@drawable/bg_layout_main_wind"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_copilot_blow"
+            android:layout_width="120px"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="28px"
+            android:gravity="center"
+            android:text="@string/hvac_direct_blow"
+            android:textColor="@color/c5390e5"
+            android:textSize="30px" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="24px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="32px"
+            android:background="@color/c1AFFFFFF" />
+
+        <CheckBox
+            android:id="@+id/cb_wind_co_face"
+            style="@style/HVACCheckbox56"
+            android:layout_marginLeft="60px"
+            android:background="@drawable/vtp_cb_wind_co_face" />
+
+        <CheckBox
+            android:id="@+id/cb_wind_co_feet"
+            style="@style/HVACCheckbox56"
+            android:layout_marginLeft="60px"
+            android:background="@drawable/vtp_cb_wind_co_feet" />
+
+    </LinearLayout>
+
+    <com.adayo.systemui.windows.views.hvac.EasyPickerView
+        android:id="@+id/driver_temp_select"
+        android:layout_width="200px"
+        android:layout_height="255px"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="170px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_main_wind_direction" />
+
+    <com.adayo.systemui.windows.views.hvac.EasyPickerView
+        android:id="@+id/copilot_temp_select"
+        android:layout_width="200px"
+        android:layout_height="255px"
+        android:layout_centerVertical="true"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/driver_temp_select" />
+
+    <LinearLayout
+        android:id="@+id/hvac_vip_function_left"
+        android:layout_width="wrap_content"
+        android:layout_height="90px"
+        android:layout_marginBottom="40px"
+        android:background="@drawable/bg_layout_main_wind"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tv_ac"
+            android:layout_width="178px"
+            android:layout_height="90px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/hvac_wind_ac"
+            android:textColor="@color/hvac_white"
+            android:textSize="32px" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="24px"
+            android:layout_gravity="center"
+            android:background="@color/c1AFFFFFF" />
+
+        <TextView
+            android:id="@+id/tv_auto"
+            android:layout_width="178px"
+            android:layout_height="90px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/hvac_wind_auto"
+            android:textColor="@color/hvac_white"
+            android:textSize="32px" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="24px"
+            android:layout_gravity="center"
+            android:background="@color/c1AFFFFFF" />
+
+        <TextView
+            android:id="@+id/tv_sync"
+            android:layout_width="178px"
+            android:layout_height="90px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/hvac_temp_sync"
+            android:textColor="@color/hvac_white"
+            android:textSize="32px" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="24px"
+            android:layout_gravity="center"
+            android:background="@color/c1AFFFFFF" />
+
+        <CheckBox
+            android:id="@+id/cb_wind_window"
+            android:layout_width="120px"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="28px"
+            android:padding="14px"
+            android:button="@null"
+            android:background="@drawable/cb_wind_window" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="180px"
+        android:layout_height="90px"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bg_layout_main_wind"
+        app:layout_constraintBottom_toBottomOf="@id/hvac_vip_function_left"
+        app:layout_constraintEnd_toStartOf="@id/hvac_vip_function_right"
+        app:layout_constraintStart_toEndOf="@id/hvac_vip_function_left">
+
+        <CheckBox
+            android:id="@+id/cb_hvac_switch"
+            android:layout_width="140px"
+            android:layout_height="90px"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/vtp_cb_hvac_switch" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hvac_vip_function_right"
+        android:layout_width="wrap_content"
+        android:layout_height="90px"
+        android:background="@drawable/bg_layout_main_wind"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/hvac_vip_function_left"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_air_protect"
+            style="@style/HVACCheckbox120"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="28px"
+            android:background="@mipmap/vtp_ac_icon_pop_n" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="24px"
+            android:layout_gravity="center"
+            android:background="@color/c1AFFFFFF" />
+
+        <TextView
+            android:id="@+id/tv_eco"
+            android:layout_width="178px"
+            android:layout_height="90px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/hvac_energy_move"
+            android:textColor="@color/c41AC83"
+            android:textSize="32px" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="24px"
+            android:layout_gravity="center"
+            android:background="@color/c1AFFFFFF" />
+
+        <TextView
+            android:id="@+id/tv_intelligent"
+            android:layout_width="178px"
+            android:layout_height="90px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/hvac_intelligence"
+            android:textColor="@color/hvac_title_color"
+            android:textSize="32px" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="24px"
+            android:layout_gravity="center"
+            android:background="@color/c1AFFFFFF" />
+
+        <TextView
+            android:id="@+id/tv_back_row"
+            android:layout_width="178px"
+            android:layout_height="90px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/hvac_back_raw"
+            android:textColor="@color/hvac_title_color"
+            android:textSize="32px" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_hvac_seat"
+        android:layout_width="180px"
+        android:layout_height="90px"
+        android:layout_marginBottom="24px"
+        android:background="@drawable/bg_layout_main_wind"
+        android:gravity="center"
+        android:text="@string/hvac_seat"
+        android:textColor="@color/vtp_seat_text_color"
+        android:textSize="34px"
+        app:layout_constraintBottom_toTopOf="@id/hvac_vip_function_left"
+        app:layout_constraintStart_toStartOf="@id/hvac_vip_function_left" />
+
+    <TextView
+        android:id="@+id/tv_hvac_fragrance"
+        android:layout_width="180px"
+        android:layout_height="90px"
+        android:background="@drawable/bg_layout_main_wind"
+        android:gravity="center"
+        android:text="@string/hvac_fragrance"
+        android:textColor="@color/seat_text_color"
+        android:textSize="34px"
+        app:layout_constraintBottom_toBottomOf="@id/tv_hvac_seat"
+        app:layout_constraintEnd_toEndOf="@id/hvac_vip_function_right" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<apps xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <app
+        app:app_icon="@mipmap/ivi_home_allapp_settings_icon_120"
+        app:app_name="@string/menu_setting"
+        app:app_package="com.adayo.app.setting"
+        app:app_source="ADAYO_SOURCE_SETTING" />
+
+    <app
+        app:app_icon="@mipmap/ivi_home_allapp_bluetoothtelephone_icon_120"
+        app:app_name="@string/menu_phone"
+        app:app_package="com.adayo.app.adayobluetoothphone"
+        app:app_source="ADAYO_SOURCE_BT_PHONE" />
+
+    <app
+        app:app_icon="@mipmap/app_gallery"
+        app:app_name="@string/menu_gallery"
+        app:app_package="com.adayo.app.gallery"
+        app:app_source="ADAYO_SOURCE_PHOTO" />
+
+    <app
+        app:app_icon="@mipmap/a08_all_menu_icon_c_driving_data"
+        app:app_name="@string/menu_drivingreport"
+        app:app_package="com.adayo.app.drivingdata"
+        app:app_source="ADAYO_SOURCE_DRIVINGREPORT" />
+
+    <app
+        app:app_icon="@mipmap/ivi_home_allapp_message_icon_120"
+        app:app_name="@string/menu_message"
+        app:app_package=""
+        app:app_source="" />
+
+    <app
+        app:app_icon="@mipmap/ivi_home_allapp_camara_icon_120"
+        app:app_name="@string/menu_camera"
+        app:app_package="com.adayo.app.camera"
+        app:app_source="ADAYO_SOURCE_CAMERA" />
+
+    <app
+        app:app_icon="@mipmap/ivi_home_allapp_charge_icon_120"
+        app:app_name="@string/menu_battery"
+        app:app_package="com.baic.icc.battery"
+        app:app_source="ADAYO_SOURCE_CHARGECENTER" />
+
+    <app
+        app:app_icon="@mipmap/ivi_home_allapp_driver_icon_120"
+        app:app_name="@string/menu_carmaster"
+        app:app_package="com.adayo.app.userguide"
+        app:app_source="ADAYO_SOURCE_USER_GUIDE" />
+
+    <app
+        app:app_icon="@mipmap/ivi_home_allapp_media_icon_120"
+        app:app_name="@string/menu_media"
+        app:app_package="com.adayo.app.media"
+        app:app_source="ADAYO_SOURCE_MULTIMEDIA" />
+
+    <app
+        app:app_icon="@mipmap/ivi_home_allapp_radio_icon_120"
+        app:app_name="@string/menu_fm"
+        app:app_package=""
+        app:app_source="ADAYO_SOURCE_RADIO" />
+
+    <app
+        app:app_icon="@mipmap/ivi_home_allapp_folder_icon_120"
+        app:app_name="@string/menu_filemanager"
+        app:app_package="com.adayo.app.filemanager"
+        app:app_source="ADAYO_SOURCE_FILEMANAGER" />
+
+    <app
+        app:app_icon="@mipmap/ivi_home_allapp_vip_icon_120"
+        app:app_name="@string/menu_account"
+        app:app_package="com.baic.icc.account"
+        app:app_source="ADAYO_SOURCE_ACCOUNT" />
+
+    <app
+        app:app_icon="@mipmap/ivi_home_allapp_weather_icon_120"
+        app:app_name="@string/menu_weather"
+        app:app_package="com.adayo.app.weather"
+        app:app_source="ADAYO_SOURCE_WEATHER" />
+
+    <app
+        app:app_icon="@mipmap/ivi_home_allapp_shop_icon_120"
+        app:app_name="@string/menu_appstore"
+        app:app_package="com.baic.icc.appstore"
+        app:app_source="ADAYO_SOURCE_APPSTORE" />
+
+    <app
+        app:app_icon="@mipmap/ivi_home_allapp_park_icon_120"
+        app:app_name="@string/menu_parking"
+        app:app_package="com.adayo.aaop_deviceservice"
+        app:app_source="ADAYO_SOURCE_AVM" />
+
+</apps>

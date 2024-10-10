@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30px"
+    tools:ignore="MissingConstraints,PxUsage"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/gridview_item_select">
+    <ImageView
+        android:id="@+id/img_shortcut_app"
+        android:layout_width="88px"
+        android:layout_height="88px"
+        android:scaleType="center"
+        android:src="@mipmap/ivi_home_allapp_ac_icon_120"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

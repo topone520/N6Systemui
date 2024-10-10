@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="PxUsage">
+
+    <LinearLayout
+        android:id="@+id/linear_shortcut"
+        android:layout_width="148px"
+        android:layout_height="552px"
+        android:background="@drawable/shortcut_panel_bg"
+        android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_shortcut_app"
+            android:layout_width="88px"
+            android:layout_height="442px"
+            android:layout_marginTop="30px"
+            android:layout_marginStart="30px"
+            android:orientation="vertical"/>
+        <ImageView
+            android:id="@+id/img_shortcut_edit"
+            android:layout_width="56px"
+            android:layout_height="32px"
+            android:layout_marginTop="24px"
+            android:layout_marginStart="46px"
+            android:src="@mipmap/ivi_allapp_shortcut_bar_edit_n"
+            android:scaleType="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

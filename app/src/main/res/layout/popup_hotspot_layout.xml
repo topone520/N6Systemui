@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.adayo.systemui.windows.views.BlurTransitionView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1000px"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_negative_bg"
+    tools:ignore="PxUsage">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="1000px"
+        android:layout_height="160px">
+
+        <com.adayo.systemui.windows.views.SwitchButtonVe
+            android:id="@+id/hotspot_switch_btn"
+            android:layout_width="72px"
+            android:layout_height="44px"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="60px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="172px"
+            android:text="@string/screen_hotspot_name"
+            android:textColor="#FFFFFF"
+            android:textFontWeight="500"
+            android:textSize="40px" />
+
+        <RelativeLayout
+            android:id="@+id/rl_hotspot_more"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="64px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20px"
+                android:layout_toStartOf="@id/iv_hotspot_more"
+                android:text="@string/menu_setting"
+                android:textColor="@color/c_80_FF"
+                android:textFontWeight="400"
+                android:textSize="34px" />
+
+            <ImageView
+                android:id="@+id/iv_hotspot_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingBottom="5px"
+                android:src="@mipmap/ivi_menu_down_icon_pull_down_n" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_hotspot_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160px"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="1000px"
+            android:layout_height="1px"
+            android:background="@color/c_80_3D" />
+
+        <RelativeLayout
+            android:id="@+id/rl_hotspot_name"
+            android:layout_width="1000px"
+            android:layout_height="120px">
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginStart="60px"
+                android:layout_marginTop="19px"
+                android:src="@mipmap/ivi_top_icon_hotspot_unlinked_n" />
+
+            <TextView
+                android:layout_width="136px"
+                android:layout_height="48px"
+                android:layout_marginStart="160px"
+                android:layout_marginTop="36px"
+                android:text="热点名称"
+                android:textColor="#B3FFFFFF"
+                android:textSize="34px" />
+
+            <TextView
+                android:id="@+id/tv_hotspot_name"
+                android:layout_width="wrap_content"
+                android:layout_height="48px"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="36px"
+                android:layout_marginEnd="60px"
+                android:text="ARCFOX_BOX"
+                android:textColor="#FFFFFF"
+                android:textSize="34px" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1000px"
+            android:layout_height="1px"
+            android:layout_below="@id/rl_hotspot_name"
+            android:background="@color/c_80_3D" />
+
+        <RelativeLayout
+            android:id="@+id/rl_hotspot_password"
+            android:layout_width="1000px"
+            android:layout_height="120px"
+            android:layout_below="@id/rl_hotspot_name">
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginStart="60px"
+                android:layout_marginTop="19px"
+                android:src="@mipmap/ivi_top_icon_wifi_password" />
+
+            <TextView
+                android:layout_width="136px"
+                android:layout_height="48px"
+                android:layout_marginStart="160px"
+                android:layout_marginTop="36px"
+                android:text="热点密码"
+                android:textColor="#B3FFFFFF"
+                android:textSize="34px" />
+
+            <TextView
+                android:id="@+id/tv_hotspot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="48px"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="36px"
+                android:layout_marginEnd="156px"
+                android:text="ARCFOX_BOX"
+                android:textColor="#FFFFFF"
+                android:textSize="34px" />
+
+            <ImageView
+                android:id="@+id/img_hotspot_hint"
+                android:layout_width="56px"
+                android:layout_height="56px"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="32px"
+                android:layout_marginEnd="60px"
+                android:src="@mipmap/ivi_top_icon_wifi_password_view_n" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1000px"
+            android:layout_height="1px"
+            android:layout_below="@id/rl_hotspot_password"
+            android:background="@color/c_80_3D" />
+
+        <RelativeLayout
+            android:id="@+id/rl_hotspot_frequency"
+            android:layout_width="1000px"
+            android:layout_height="168px"
+            android:layout_below="@id/rl_hotspot_password"
+            android:gravity="center">
+
+            <RadioGroup
+                android:id="@+id/rg_hotspot_type"
+                android:layout_width="880px"
+                android:layout_height="88px"
+                android:background="@drawable/rg_hotspot_bg"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btn_hotspot_type1"
+                    android:layout_width="440px"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/rg_hotspot_bg_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="2.4G"
+                    android:textColor="@color/hvac_white"
+                    android:textSize="30px" />
+
+                <RadioButton
+                    android:id="@+id/btn_hotspot_type2"
+                    android:layout_width="440px"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8px"
+                    android:background="@drawable/rg_hotspot_bg_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="5G"
+                    android:textColor="@color/hvac_white"
+                    android:textSize="30px" />
+            </RadioGroup>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.adayo.systemui.windows.views.BlurTransitionView>

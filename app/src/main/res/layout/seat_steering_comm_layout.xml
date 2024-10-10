@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_steering"
+    android:layout_width="240px"
+    android:layout_height="190px"
+    android:background="@drawable/seat_button_white45_bg">
+
+    <ImageView
+        android:id="@+id/iv_steering"
+        style="@style/SEATImageViewComm"
+        android:background="@mipmap/ivi_ac_seats_icon_wheel_hot_n" />
+
+    <TextView
+        android:id="@+id/tv_steering"
+        style="@style/SEATTextViewComm"
+        android:textColor="@drawable/seat_text_color"
+        android:layout_below="@+id/iv_steering"
+        android:layout_centerHorizontal="true"
+        android:text="@string/hvac_steering" />
+
+</RelativeLayout>

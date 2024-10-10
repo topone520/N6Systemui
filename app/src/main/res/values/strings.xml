@@ -1,0 +1,444 @@
+<resources>
+    <string name="app_name">N6 SystemUI</string>
+    <string name="cmcc">中国移动</string>
+    <string name="chinanet">中国电信</string>
+    <string name="china_unicom">中国联通</string>
+    <string name="bluetooth_switch">蓝牙开关</string>
+    <string name="wifi_switch">Wi-Fi</string>
+    <string name="hotspot_switch">热点开关</string>
+    <string name="signal_switch">启用数据网络</string>
+
+    <string name="media">媒体</string>
+    <string name="ring">铃声</string>
+    <string name="phone">电话</string>
+    <string name="navi">导航</string>
+
+    <string name="save">保存</string>
+    <string name="one_click_collapse">一键放倒</string>
+    <string name="one_click_recovery">一键恢复</string>
+
+    <string name="hvac_air">空调</string>
+    <string name="hvac_air_ofn">空调开关</string>
+    <string name="hvac_seat">座椅</string>
+    <string name="hvac_fragrance">香氛</string>
+    <string name="hvac_main_dir">主驾直吹</string>
+    <string name="hvac_front_defrosting">前除霜</string>
+    <string name="hvac_sync">SYNC</string>
+    <string name="hvac_auto">AUTO</string>
+    <string name="hvac_ac">A/C</string>
+    <string name="hvac_energy_move">ECO</string>
+    <string name="hvac_intelligence">智能</string>
+    <string name="hvac_intelligence_air">智能空调</string>
+    <string name="hvac_back_raw">后排</string>
+    <string name="hvac_co_dir">副驾直吹</string>
+    <string name="hvac_blowing_dough">吹面</string>
+    <string name="hvac_blowing_feet">吹脚</string>
+    <string name="hvac_seat_heating">座椅加热</string>
+
+    <string name="rapid_temperature_control">极速控温</string>
+    <string name="rapid_temperature_control_title">极速控温车窗控制</string>
+    <string name="hvac_status">状态：</string>
+    <string name="air_purification">空调净化</string>
+    <string name="self_drying">自干燥</string>
+    <string name="negative_ion_sterilization">水离子</string>
+    <string name="intell_ion_sterilization">智能离子</string>
+    <string name="rapid_start_content">即将根据车内温度实现快速降温/升温\n确认开启？</string>
+    <string name="rapid_start_content1">是否开启自动开关、关窗？</string>
+    <string name="rapid_start">开启
+    </string>
+    <string name="rapid_close">关闭</string>
+    <string name="rapid_start_toast_time">极速控温功能开启中</string>
+    <string name="hvac_rear_seats">后排空调</string>
+    <string name="hvac_rapid_three_toast">极速控温功能即将开启</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_setting">设置</string>
+    <string name="menu_tencent_video">腾讯视频</string>
+    <string name="menu_car_bit">CarBit</string>
+    <string name="menu_phone">蓝牙电话</string>
+    <string name="menu_gallery">图库</string>
+    <string name="menu_drivingreport">我的旅程</string>
+    <string name="menu_message">消息中心</string>
+    <string name="menu_camera">相机</string>
+    <string name="menu_dvr">车外相机</string>
+    <string name="menu_battery">充电中心</string>
+    <string name="menu_carmaster">整车电子说明书</string>
+    <string name="menu_media">媒体中心</string>
+    <string name="menu_fm">收音机</string>
+    <string name="menu_filemanager">文件管理</string>
+    <string name="menu_account">账户中心</string>
+    <string name="menu_weather">天气</string>
+    <string name="menu_appstore">应用商店</string>
+    <string name="menu_parking">自动泊车</string>
+    <string name="menu_image">全景影像</string>
+    <string name="menu_carplay">Apple CarPlay</string>
+    <string name="menu_recently">最近使用</string>
+    <string name="menu_scene">Hygge实验室</string>
+    <string name="menu_hi_car">HUAWEI HiCar</string>
+    <string name="menu_link">ARCFOX Link</string>
+    <string name="menu_map">导航</string>
+    <string name="menu_lightdance">灯舞</string>
+    <string name="menu_wallpaper">壁纸商城</string>
+    <string name="menu_icall_ecall">ICall</string>
+    <string name="menu_car_manager">车机管家</string>
+    <string name="menu_ac">AC</string>
+    <string name="menu_edit">拖动应用可互换\n位置</string>
+    <string name="screen_jijing">极净模式</string>
+    <string name="screen_addhot">加热</string>
+    <string name="screen_apply">应用？</string>
+    <string name="screen_ventilate">通风</string>
+    <string name="screen_massage">按摩</string>
+    <string name="screen_malaxation">揉捏</string>
+    <string name="screen_nologin">未登录</string>
+    <string name="screen_bluetooth">蓝牙</string>
+    <string name="screen_wifi">Wi-Fi</string>
+    <string name="screen_charge">充电</string>
+    <string name="screen_mirror">后视镜</string>
+    <string name="screen_screen">车窗</string>
+    <string name="screen_window">息屏</string>
+    <string name="screen_bluetooth_name">蓝牙</string>
+    <string name="screen_wifi_name">Wi-Fi</string>
+    <string name="screen_hotspot_name">热点</string>
+    <string name="screen_bluetooth_more">更多设置</string>
+    <string name="screen_bluetooth_connect">已连接设备</string>
+    <string name="screen_bluetooth_text">已连接</string>
+    <string name="screen_bluetooth_no_text">未连接</string>
+    <string name="screen_bluetooth_area">附近设备</string>
+    <string name="screen_bluetooth_device_name">小王的IPhone</string>
+    <string name="screen_wifi_area">附近网络</string>
+    <string name="screen_scene_mode">情景模式</string>
+    <string name="screen_scene_take_a_nap">小憩时光</string>
+    <string name="screen_scene_meditate">静心冥想</string>
+    <string name="screen_scene_forest_oxygen_bar">森林氧吧</string>
+    <string name="screen_scene_awakening_mode">醒神模式</string>
+    <string name="screen_scene_awakening_baby">宝贝乐享</string>
+    <string name="screen_scene_awakening_air">清新换气</string>
+    <string name="screen_scene_awakening_camp">露营模式</string>
+    <string name="screen_scene_qsviewpanele">QsViewPanel</string>
+    <string name="screen_scene_screenOff">ScreenOff</string>
+    <string name="screen_scene_bluetooth_fox">可被发现为“小狐狸车机”</string>
+    <string name="screen_scene_nearby_devices">附近设备</string>
+    <string name="screen_scene_file_management">文件管理</string>
+    <string name="screen_can_be_found">可被发现为</string>
+    <string name="screen_no_control">没有子控件！</string>
+    <string name="screen_no_background">没有背景子控件！</string>
+    <string name="screen_no_content">没有内容子控件！</string>
+    <string name="screen_no_subtract"> 减 ：</string>
+    <string name="screen_no_add"> 加 ：</string>
+    <string name="screen_scene_take_a_nap_name">放松身心，恢复精力...</string>
+    <string name="screen_scene_meditate_name">自然地调整你的生物钟...</string>
+    <string name="screen_scene_forest_oxygen_bar_name">有益的森林空气负氧离子...</string>
+    <string name="screen_scene_awakening_mode_name">提高注意力,短暂缓解疲劳感...</string>
+    <string name="screen_scene_start">立即运行</string>
+    <string name="screen_scene_stop">停止运行</string>
+
+    <string name="screen_scene_select">选择需要开启的情景模式</string>
+    <string name="screen_360">全景影像</string>
+    <string name="screen_head_display">抬头显示</string>
+    <string name="screen_person_warn">行人警示</string>
+    <string name="screen_esp_off">车身稳定</string>
+    <string name="screen_rear_panel">后排面板</string>
+    <string name="screen_dark_mode">夜间模式</string>
+    <string name="screen_tailgate">后尾门</string>
+    <string name="screen_lamp">智能大灯</string>
+    <string name="screen_shutdown">熄屏</string>
+    <string name="screen_rear">后排面板</string>
+    <string name="screen_slope">陡坡缓降</string>
+    <string name="screen_atmosphere">氛围灯</string>
+    <string name="screen_child">儿童锁</string>
+    <string name="screen_pedestrian">行人警示音</string>
+    <string name="screen_radar">前雷达</string>
+    <string name="screen_lock">中控锁</string>
+    <string name="screen_skylight">天窗</string>
+    <string name="seat_all_close">全部关闭</string>
+
+    <string name="status_pm_excellent">优</string>
+    <string name="status_pm_good">良</string>
+    <string name="status_pm_mild">轻度污染</string>
+    <string name="status_pm_moderate">中度污染</string>
+    <string name="status_pm_severe">重度污染</string>
+    <string name="status_pm_serious">严重污染</string>
+    <string name="vtp_status_pm_mild">轻度污染</string>
+    <string name="vtp_status_pm_moderate">中度污染</string>
+    <string name="vtp_status_pm_severe">重度污染</string>
+    <string name="vtp_status_pm_serious">严重污染</string>
+    <string name="status_dvr">行车记录仪</string>
+    <string name="status_dvr_sound">录制时录音</string>
+    <string name="confirm_uninstallation">确定卸载</string>
+
+
+    <string name="speed_label_slow">"Slow"</string>
+    <string name="speed_label_okay">"Good"</string>
+    <string name="speed_label_fast">"Fast"</string>
+    <string name="speed_label_very_fast">"Very fast"</string>
+    <string name="wifi_fail_to_scan">"Unable to scan network"</string>
+    <string name="wifi_fail_hvacpanel">HvacPanel</string>
+    <string name="wifi_fail_vtp_hvacpanel">VtpHvacPanel</string>
+    <string name="massage_one">1</string>
+    <string name="massage_two">2</string>
+    <string name="massage_there">3</string>
+    <string name="massage_time"> 21:36</string>
+    <string name="massage_date">星期日7/21 车外温度 28℃</string>
+
+    <string name="seat_massage_adjust">按摩调节</string>
+    <string name="driver_seat_massage_adjust">主驾座椅按摩</string>
+    <string name="left_area_seat_massage_adjust">左后座椅按摩</string>
+    <string name="copilot_seat_massage_adjust">副驾座椅按摩</string>
+    <string name="right_rear_seat_massage_adjust">右后座椅按摩</string>
+    <string name="seat_close">关闭</string>
+    <string name="seat_high">强力</string>
+    <string name="seat_mid">标准</string>
+    <string name="seat_low">轻柔</string>
+    <string name="seat_host_welcome">主驾迎宾</string>
+    <string name="driver_is_input">检测到主驾座椅调节，是否保存到</string>
+    <string name="driver_input_1">"主驾1"？</string>
+    <string name="driver_input_2">"主驾2"？</string>
+    <string name="driver_input_3">"主驾3"？</string>
+    <string name="copilot_is_input">检测到副驾座椅调节，是否保存到</string>
+    <string name="copilot_input_1">"副驾1"？</string>
+    <string name="copilot_input_2">"副驾2"？</string>
+    <string name="copilot_input_3">"副驾3"？</string>
+
+
+    <string name="select_open_massage_mode">选择需要开启的按摩模式</string>
+    <string name="hvac_seat_ventilate">座椅通风</string>
+    <string name="hvac_seat_shift">主副驾座椅加热自动换挡</string>
+    <string name="hvac_front_raw">前排</string>
+    <string name="hvac_massage">按摩</string>
+    <string name="hvac_steering">方向盘</string>
+    <string name="hvac_adjust">调节</string>
+    <string name="hvac_all_close">全关</string>
+    <string name="hvac_seat_massage_move">座椅按摩模式</string>
+    <string name="seat_main_adjust">主驾调节</string>
+    <string name="seat_co_adjust">副驾调节</string>
+    <string name="seat_usher">迎宾</string>
+    <string name="hvac_ventilate">通风</string>
+    <string name="seat_main_massage_mode">主驾座椅按摩模式</string>
+    <string name="seat_co_massage_mode">副驾座椅按摩模式</string>
+    <string name="seat_left_area_massage_mode">左后座椅按摩模式</string>
+    <string name="seat_right_area_massage_mode">右后座椅按摩模式</string>
+    <string name="seat_adjust">座椅调节</string>
+    <string name="seat_deputy_welcome">副驾迎宾</string>
+    <string name="seat_heat_grep">加热自动换挡</string>
+    <string name="back_left_area">后左侧</string>
+    <string name="back_right_area">后右侧</string>
+    <string name="back_row_seat_adjust">后排座椅调节</string>
+
+
+    <!--    按摩模式 start-->
+    <string name="seat_move1">脉冲</string>
+    <string name="seat_move2">波浪</string>
+    <string name="seat_move3">猫步</string>
+    <string name="seat_move4">单排</string>
+    <string name="seat_move5">交叉</string>
+    <string name="seat_move6">蝶形</string>
+    <string name="seat_move7">腰部</string>
+    <string name="seat_move8">蛇形</string>
+
+    <string name="fragrance_title_a">空净</string>
+    <string name="fragrance_title_b">沐风</string>
+    <string name="fragrance_title_c">苏醒</string>
+    <string name="fragrance_title_n">空</string>
+    <string name="fragrance_concentration_high">高</string>
+    <string name="fragrance_concentration_mid">中</string>
+    <string name="fragrance_concentration_low">低</string>
+
+    <string name="delete_text">卸载</string>
+    <string name="cancel_text">取消</string>
+    <string name="seatadjustment_text">座椅调节</string>
+
+    <string name="fragrance_system_error">香氛系统故障，请联系客服中心</string>
+    <string name="fragrance_slot_null">未检测到香氛，请放置香氛弹</string>
+    <string name="input_fragrance_hint_name">请输入自定义香氛名称</string>
+
+    <string name="hvac_no_direct_blow">防直吹</string>
+    <string name="hvac_direct_blow">直吹</string>
+    <string name="hvac_wind_auto">自动</string>
+    <string name="hvac_wind_ac">A/C</string>
+    <string name="hvac_temp_sync">温区同步</string>
+    <string name="hvac_pm">PM2.5</string>
+
+
+    <string name="select_locked">选择要上锁的儿童锁</string>
+    <string name="select_left_locked">左儿童锁</string>
+    <string name="select_right_locked">右儿童锁</string>
+
+    <string name="select_voice">选择需要开启的声音</string>
+    <string name="select_voice_one">声音一</string>
+    <string name="select_voice_two">声音二</string>
+
+
+    <string name="select_open_type">选择需要开启的类型</string>
+    <string name="select_type_one">RCTA</string>
+    <string name="select_type_two">RCTA+RCTB</string>
+
+    <string name="Lane_assistance_warning">车道辅助警示</string>
+    <string name="select_sound_and_light">声光</string>
+    <string name="select_vibration">震动</string>
+    <string name="select_sound_and_light_and_vibration">声光震动</string>
+
+    <string name="select_sunroof">天窗</string>
+    <string name="select_sunroof_opening">选择天窗水平开度</string>
+    <string name="select_all_close">全关</string>
+    <string name="select_ventilate">通风</string>
+    <string name="select_all_open">全开</string>
+
+    <string name="sunroof">遮阳帘</string>
+    <string name="intelligent_cruise">智能巡航</string>
+    <string name="lane_change_warning">变道预警</string>
+    <string name="lane_Assist">车道辅助</string>
+    <string name="reverse_warning_protection">倒车预警保护</string>
+    <string name="anti_collision_reminder">开门防撞提醒</string>
+    <string name="rear_collision_prevention_reminder">后车防追尾提醒</string>
+
+    <string name="atmosphere_light_rhythm_mode">氛围灯律动模式</string>
+    <string name="constant_display_mode">常显模式</string>
+    <string name="music_rhythm">音乐律动</string>
+    <string name="driving_follow_up">驾驶随动</string>
+    <string name="interactive_follow_up">交互随动</string>
+    <string name="atmosphere_light_brightness_adjustment">氛围灯亮度调节</string>
+    <string name="automatic">自动</string>
+    <string name="atmosphere_light_color">氛围灯颜色</string>
+
+    <string name="lava_red">熔岩</string>
+    <string name="dawn_orange">曙光</string>
+    <string name="misty_yellow">迷雾</string>
+    <string name="tundra_green">苔原</string>
+    <string name="cedar_green">雪松</string>
+    <string name="sky_blue">天空</string>
+    <string name="glacier_blue">冰河</string>
+    <string name="darkness_night">夜幕</string>
+    <string name="berry_purple">浆果</string>
+    <string name="rose_powder">玫瑰</string>
+    <string name="title_warning">告警消息提醒</string>
+
+    <string name="peps_fault_9_text_tip">防盗认证失败</string>
+
+    <string name="peps_fault_12_text_tip">手机钥匙控制器故障</string>
+
+    <string name="peps_fault_13_text_tip">手机钥匙天线故障</string>
+
+    <string name="light_system_1_text_tip">左侧远光灯故障</string>
+
+    <string name="light_system_2_text_tip">右侧远光灯故障</string>
+
+    <string name="light_system_3_text_tip">左侧近光灯故障</string>
+
+    <string name="light_system_4_text_tip">右侧近光灯故障</string>
+
+    <string name="light_system_5_text_tip">左侧组合灯故障</string>
+
+    <string name="light_system_6_text_tip">右侧组合灯故障</string>
+
+    <string name="out_sound_text_tip">车外声音提示系统故障</string>
+
+    <string name="brake_fluid_text_tip">请添加制动液</string>
+
+    <string name="trunk_fail_text_tip">电动尾门故障</string>
+
+    <string name="tpms_5_text_tip">请更换胎压传感器电池</string>
+
+    <string name="avap_system_1_text_tip">自动泊车系统不可用</string>
+
+    <string name="avap_system_2_text_tip">泊车雷达系统不可用</string>
+
+    <string name="avap_system_3_text_tip">泊车雷达及自动泊车系统不可用</string>
+
+    <string name="hot_manager_text_tip">热管理系统故障</string>
+
+    <string name="pasc_fail_text_tip">PASC电子转向柱故障</string>
+
+    <string name="power_fail_text_tip">动力电池系统故障</string>
+
+    <string name="motor_system_fault_text_tip">电机系统故障</string>
+
+    <string name="brak_system_fault_text_tip">制动系统故障</string>
+
+    <string name="tpms_sensor_text_tip">胎压传感器未匹配</string>
+
+    <string name="lost_sensor_text_tip">传感器丢失</string>
+
+    <string name="low_pressure_1_text_tip">低压蓄电池电力消耗，即将关闭部分舒适性设备</string>
+
+    <string name="low_pressure_2_text_tip">低压蓄电池电力消耗，即将关闭部分舒适性设备以及位置灯</string>
+
+    <string name="lamp_fault_1_text_tip">左侧位置灯故障</string>
+
+    <string name="lamp_fault_2_text_tip">右侧位置灯故障</string>
+
+    <string name="lamp_fault_3_text_tip">左侧日行灯故障</string>
+
+    <string name="lamp_fault_4_text_tip">右侧日行灯故障</string>
+
+    <string name="lamp_fault_5_text_tip">左侧转向灯故障</string>
+
+    <string name="lamp_fault_6_text_tip">右侧转向灯故障</string>
+
+    <string name="lamp_fault_7_text_tip">后雾灯故障</string>
+
+    <string name="lamp_fault_8_text_tip">低位制动灯故障</string>
+
+    <string name="lamp_fault_9_text_tip">高位制动灯故障</string>
+
+    <string name="lamp_fault_10_text_tip">倒车灯故障</string>
+
+    <string name="lamp_fault_11_text_tip">牌照灯故障</string>
+
+    <string name="ica_fault_text_tip">智能巡航系统暂不可用</string>
+
+    <string name="lss_fault_text_tip">车道辅助系统暂不可用</string>
+
+    <string name="fcwaeb_fault_text_tip">前方预警保护系统暂不可用</string>
+
+    <string name="lcadow_fault_text_tip">侧方预警保护系统暂不可用</string>
+
+    <string name="tsr_fault_text_tip">交通标志识别系统暂不可用</string>
+
+    <string name="rcta_fault_text_tip">倒车预警保护系统暂不可用</string>
+
+    <string name="rcw_fault_text_tip">后车防追尾提示暂不可用</string>
+
+    <string name="hma_fault_text_tip">智能远光灯功能暂不可用</string>
+
+    <string name="drv_fault_text_tip">驾驶辅助系统暂不可用</string>
+
+    <string name="front_cam_text_tip">巡航摄像头遮挡，请及时清洁</string>
+
+    <string name="sure_delete_all_message">确定删除全部消息</string>
+
+    <string name="sure">确定</string>
+
+    <string name="delete">删除</string>
+
+    <string name="num">条</string>
+
+    <string name="message">消息</string>
+    <string name="a_moment_ago">刚刚</string>
+    <string name="minutes_ago">分钟前</string>
+    <string name="hours_ago">小时前</string>
+    <string name="yesterday">昨天</string>
+    <string name="look_detail">查看详情</string>
+    <string name="no_update">暂不升级</string>
+    <string name="system_message">系统消息</string>
+    <string name="warning_message">告警消息</string>
+    <string name="select_all">全选</string>
+    <string name="all_read">全部已读</string>
+    <string name="complete">完成</string>
+
+    <string name="tv_heating_and_ventilation">通风加热</string>
+    <string name="tv_seat_massage">座椅按摩</string>
+    <string name="seat_restore">恢复</string>
+    <string name="seat_save">保存</string>
+    <string name="is_save_seat_set">检测到主驾座椅调节，是否保存到“主驾1”？</string>
+
+    <string name="no_message">暂无消息</string>
+    <string name="error_tips1">请启动车辆重试</string>
+    
+    <string name="driving_can_not_play_video">驾驶中，暂不支持彩蛋视频播放</string>
+    <string name="blt_calling_play_wait">蓝牙通话中，请稍后观看</string>
+
+    <string name="tv_power_message">为避免忘记下电导致亏电，车辆电源\n将在倒计时结束后自动关闭</string>
+    <string name="tv_power_enter">下电</string>
+
+
+</resources>

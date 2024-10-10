@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="hvac_white">#FFFFFFFF</color>
+    <color name="time">#66FFFFFF</color>
+    <color name="dock_bar_bg">#0D0E0F</color>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <color name="transparent">#00000000</color>
+
+    <color name="hvac_title_color">#1E293D</color>
+    <color name="hvac_title_color_1">#ffffff</color>
+
+    <color name="hvac_title_color1">#B31E293D</color>
+    <color name="hvac_title_color1_1">#B3FFFFFF</color>
+
+    <color name="hvac_bg_color">#FF191D26</color>
+    <color name="dialog_bg">#66000000</color>
+    <color name="c33000000">#33000000</color>
+
+    <color name="seat_text_color">#B31E293D</color>
+    <color name="seat_text_color_1">#B3FFFFFF</color>
+
+    <color name="vtp_seat_text_color">#1E293D</color>
+    <color name="vtp_seat_text_color_1">#B3FFFFFF</color>
+    
+    <color name="seat_text_color1">#1E293D</color>
+    <color name="seat_text_color1_1">#ffffff</color>
+    <color name="seat_text_color2">#B31E293D</color>
+    <color name="seat_text_color2_1">#66FFFFFF</color>
+
+    <color name="text_color_disable">#1E293D</color>
+    <color name="text_color_disable_1">#66FFFFFF</color>
+    <color name="text_color_normals">#1E293D</color>
+    <color name="text_color_normals_1">#FFFFFF</color>
+    <color name="text_color_select">#478BC5</color>
+    <color name="text_color_select_1">#5390E5</color>
+
+
+    <color name="text_color_normals1">#B31E293D</color>
+    <color name="text_color_normals1_1">#66FFFFFF</color>
+    <color name="text_color_select1">#ffffff</color>
+    <color name="text_color_select1_1">#ffffff</color>
+
+    <color name="text_color_select3">#661E293D</color>
+    <color name="text_color_select3_1">#5C616B</color>
+
+    <color name="text_color_select4">#1E293D</color>
+    <color name="text_color_select4_1">#CD8741</color>
+    <color name="text_color_no_select4">#B31E293D</color>
+    <color name="text_color_no_select4_1">#B3FFFFFF</color>
+
+
+    <color name="c314566">#314566</color>
+    <color name="ffd8d8d8">#ffD8D8D8</color>
+    <color name="c85070aof">#D9070A0F</color>
+    <color name="c478BC5">#478BC5</color>
+    <color name="c39414F">#A6FFFFFF</color>
+    <color name="c39414F_1">#39414F</color>
+    <color name="c2D3540">#DBE3ED</color>
+    <color name="c2D3540_1">#2D3540</color>
+    <color name="c6B7279">#6B7279</color>
+    <color name="cCD8741">#CB7D2F</color>
+    <color name="cCD8741_1">#CD8741</color>
+    <color name="c41AC83">#23B27B</color>
+    <color name="c41AC83_1">#41AC83</color>
+    <color name="c53647A">#53647A</color>
+    <color name="c2b3f4f">#802B3F4F</color>
+    <color name="c414a55">#414A55</color>
+    <color name="c34c6dc">#34C6DC</color>
+    <color name="c3f5b8c">#3F5B8C</color>
+    <color name="c2C313A">#FF2C313A</color>
+    <color name="c2C313A_1">#FFFFFFFF</color>
+
+    <color name="c_80_FF">#B3FFFFFF</color>
+    <color name="c_80_3D">#14FFFFFF</color>
+    <color name="c_80_3D_1">#331E293D</color>
+    <color name="c_40_FF">#66FFFFFF</color>
+    <color name="c_90_FF">#E6FFFFFF</color>
+    <color name="c_70_FF">#66FFFFFF</color>
+    <color name="c_25_FF">#5C616B</color>
+    <color name="c_CC_FF">#CCFFFFFF</color>
+    <color name="c_FF_49">#4972B8</color>
+    <color name="c_FF_FF">#FFFFFFFF</color>
+    <color name="c5390e5">#5390E5</color>
+    <color name="c804c506d">#804C5E6D</color>
+    <color name="c161d16">#161D26</color>
+    <color name="c242b38">#242B38</color>
+    <color name="c60313949">#99313949</color>
+    <color name="c4972b8">#4972B8</color>
+    <color name="c25000000">#25000000</color>
+    <color name="c00000000">#00000000</color>
+
+    <color name="c_3e_4a_5d">#3E4A5D</color>
+    <color name="c_24_2b_39">#242B39</color>
+
+    <color name="c_b9_45_3c">#B9453C</color>
+    <color name="c_b9_45_3c_1">#D03226</color>
+    <color name="white70">#B3FFFFFF</color>
+    <color name="c131822">#131822</color>
+    <color name="c313949">#313949</color>
+    <color name="c99313949">#99313949</color>
+    <color name="c242b39">#242B39</color>
+
+    <color name="c3e4a5d">#3E4A5D</color>
+    <color name="cd8d8d8">#D8D8D8</color>
+
+    <color name="c80313949">#80313949</color>
+    <color name="cwhite65">#A6FFFFFF</color>
+    <color name="c323b40">#323B4D</color>
+    <color name="c1a313c40">#1A313C4D</color>
+    <color name="white40">#66FFFFFF</color>
+    <color name="white30">#4DFFFFFF</color>
+    <color name="white65">#A6FFFFFF</color>
+    <color name="white45">#73FFFFFF</color>
+
+
+    <color name="d242B39">#242B39</color>
+    <color name="rB9453C">#B9453C</color>
+    <color name="g3E4A5D">#3E4A5D</color>
+    <color name="b4972B8">#4972B8</color>
+    <color name="b323B4D">#323B4D</color>
+    <color name="b070A0F">#070A0F</color>
+    <color name="ce1c556">#E1C556</color>
+    <color name="ce1c556_1">#CDA520</color>
+    <color name="c7744a">#9C219A</color>
+    <color name="c7744a_1">#7744AA</color>
+    <color name="c763123">#922E1A</color>
+    <color name="c763123_1">#763123</color>
+    <color name="c10ffffff">#331E293D</color>
+    <color name="c10ffffff_1">#1AFFFFFF</color>
+    <color name="c262e3b">#262E3B</color>
+    <color name="c8a96a4">#8A96A4</color>
+    <color name="cededed">#EDEDED</color>
+    <color name="c242B39">#242B39</color>
+    <color name="c15ffffff">#26FFFFFF</color>
+    <color name="c30ffffff">#4DFFFFFF</color>
+
+    <color name="c66313949">#CC313949</color>
+    <color name="c1AFFFFFF">#1AFFFFFF</color>
+    <color name="cB3FFFFFF">#B3FFFFFF</color>
+    <color name="c8039414F">#8039414F</color>
+    <color name="c262e3b80">#CC262E3B</color>
+
+    <color name="c_message_bg_1">#242B39</color>
+    <color name="c_message_bg">#DBE3ED</color>
+    <color name="c_message_1">#FFFFFF</color>
+    <color name="c_message">#1E293D</color>
+    <color name="c_select_all_1">#3E4A5D</color>
+    <color name="c_select_all">#A6FFFFFF</color>
+    <color name="c_complete_1">#4972B8</color>
+    <color name="c_complete">#478BC5</color>
+    <color name="c_message_item_bg_1">#323B4D</color>
+    <color name="c_message_item_bg">#73FFFFFF</color>
+    <color name="c_ota_update_bg_1">#5904090E</color>
+    <color name="c_ota_update_bg">#A6E4EBF0</color>
+    <color name="c_ota_no_update_bg_1">#3E4A5D</color>
+    <color name="c_ota_no_update_bg">#66FFFFFF</color>
+    <color name="c_message_center_top_bg_1">#232C3B</color>
+    <color name="c_message_center_top_bg">#465060</color>
+    <color name="c_message_dialog_center_del_1">#B9453C</color>
+    <color name="c_message_dialog_center_del">#B22E24</color>
+    <color name="c_message_dialog_center_cancel_1">#3C485B</color>
+    <color name="c_message_dialog_center_cancel">#FFFFFF</color>
+
+
+</resources>

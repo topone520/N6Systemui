@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.adayo.systemui.windows.views.BlurTransitionView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1000px"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_negative_bg"
+    tools:ignore="PxUsage">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="1000px"
+        android:layout_height="180px">
+
+        <!--        <View-->
+        <!--            android:layout_width="72px"-->
+        <!--            android:layout_height="44px"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:layout_marginStart="60px"-->
+        <!--            android:background="@color/c_80_FF" />-->
+
+        <com.adayo.systemui.windows.views.SwitchButtonVe
+            android:id="@+id/dvr_switch_btn"
+            android:layout_width="72px"
+            android:layout_height="44px"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="60px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="172px"
+            android:text="@string/status_dvr"
+            android:textColor="#FFFFFF"
+            android:textFontWeight="500"
+            android:textSize="40px" />
+
+        <RelativeLayout
+            android:id="@+id/rl_dvr_more"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="64px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20px"
+                android:layout_toStartOf="@id/iv_dvr_more"
+                android:text="@string/menu_setting"
+                android:textColor="@color/c_80_FF"
+                android:textFontWeight="400"
+                android:textSize="34px" />
+
+            <ImageView
+                android:id="@+id/iv_dvr_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingBottom="5px"
+                android:src="@mipmap/ivi_menu_down_icon_pull_down_n" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1000px"
+        android:layout_height="1px"
+        android:layout_below="@id/rl_top"
+        android:background="@color/c_80_3D" />
+
+    <RelativeLayout
+        android:id="@+id/rl_dvr_sound"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:layout_below="@+id/rl_top"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_dvr_sound"
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:layout_marginStart="82px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_icon_dvr_sound" />
+
+        <TextView
+            android:id="@+id/tv_dvr_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="160px"
+            android:text="@string/status_dvr_sound"
+            android:textColor="@color/hvac_white"
+            android:textFontWeight="400"
+            android:textSize="34px" />
+
+    </RelativeLayout>
+
+
+</com.adayo.systemui.windows.views.BlurTransitionView>

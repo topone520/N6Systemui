@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_heat"
+    android:layout_width="240px"
+    android:layout_height="190px">
+
+    <ImageView
+        android:id="@+id/iv_heat"
+        style="@style/SEATImageViewComm" />
+
+    <TextView
+        android:id="@+id/tv_heat"
+        style="@style/SEATTextViewComm"
+        android:layout_below="@+id/iv_heat"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/screen_addhot"
+        android:text="@string/screen_addhot" />
+
+
+</RelativeLayout>

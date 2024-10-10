@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="64px"
+    android:layout_height="44px"
+    android:background="@mipmap/ivi_setting_pop_mini" >
+    <TextView
+        android:id="@+id/dialogSeekTime"
+        android:layout_width="64px"
+        android:layout_height="36px"
+        android:textFontWeight="400"
+        android:gravity="center"
+        android:textColor="@color/hvac_title_color"
+        android:textSize="24px" />
+</RelativeLayout>

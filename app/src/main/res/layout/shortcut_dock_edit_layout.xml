@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.adayo.systemui.windows.views.BlurTransitionView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btv_main"
+    android:layout_width="2000px"
+    android:layout_height="560px"
+    android:background="@drawable/shape_applist_bg"
+    tools:ignore="MissingDefaultResource,PxUsage,HardcodedText">
+
+    <ImageView
+        android:layout_width="70.83px"
+        android:layout_height="70.53px"
+        android:layout_marginStart="225px"
+        android:layout_marginTop="94px"
+        android:src="@mipmap/ivi_home_allapp_right_edit_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80px"
+        android:layout_marginTop="215px"
+        android:contentDescription="400"
+        android:text="拖动图标至快捷应用可替换\n现有应用，拖动应用可互换\n位置。"
+        android:textColor="#B3FFFFFF"
+        android:textSize="28px" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_edit_enter"
+        android:layout_width="360px"
+        android:layout_height="80px"
+        android:layout_marginStart="80px"
+        android:layout_marginTop="421px"
+        app:cardBackgroundColor="#4972B8"
+        app:cardCornerRadius="8px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="500"
+            android:text="@string/complete"
+            android:textColor="#FFFFFF"
+            android:textSize="34px" />
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="424px"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="521px"
+        android:layout_marginTop="68px"
+        android:background="@color/c_80_3D" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_shortcut_edit_app"
+        android:layout_width="1152px"
+        android:layout_height="428px"
+        android:layout_marginStart="588px"
+        android:layout_marginTop="56px"
+        android:clipToPadding="false" />
+
+    <LinearLayout
+        android:layout_width="148px"
+        android:layout_height="502px"
+        android:layout_marginStart="1820px"
+        android:layout_marginTop="29px"
+        android:background="@drawable/shortcut_panel_bg"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_shortcut_app"
+            android:layout_width="88px"
+            android:layout_height="442px"
+            android:layout_marginStart="30px"
+            android:layout_marginTop="30px"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+
+</com.adayo.systemui.windows.views.BlurTransitionView>

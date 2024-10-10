@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hvac_white">
+
+    <com.adayo.systemui.windows.views.fragrance.FragranceSlotBgView
+        android:id="@+id/fragrance_slot_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/linear_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="310px"
+        android:layout_marginTop="140px"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.adayo.systemui.windows.views.fragrance.FragranceSlotView
+            android:id="@+id/fragrance_a_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.adayo.systemui.windows.views.fragrance.FragranceSlotView
+            android:id="@+id/fragrance_b_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px" />
+
+        <com.adayo.systemui.windows.views.fragrance.FragranceSlotView
+            android:id="@+id/fragrance_c_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px" />
+
+    </LinearLayout>
+
+<!--    <include-->
+<!--        android:id="@+id/frag_system_error_view"-->
+<!--        layout="@layout/fragrance_system_error_layout"-->
+<!--        android:visibility="gone" />-->
+
+<!--    <include-->
+<!--        android:id="@+id/frag_lin_error_view"-->
+<!--        layout="@layout/fragrance_lin_error_layout"-->
+<!--        android:visibility="visible" />-->
+
+    <ImageView
+        android:id="@+id/ivi_seat_close"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_marginLeft="124px"
+        android:layout_marginTop="3px"
+        android:padding="60px"
+        android:rotation="90"
+        android:src="@mipmap/ivi_ac_icon_close_n"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_bg"
+    android:layout_width="1000px"
+    android:layout_height="140px"
+    tools:ignore="PxUsage,HardcodedText">
+    <ImageView
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="72px"
+        android:layout_marginTop="42px"
+        android:scaleType="center"
+        android:src="@mipmap/ivi_top_icon_bluetooth_list">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_bt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="48px"
+        android:layout_marginStart="160px"
+        android:layout_marginTop="21px"
+        android:text="@string/screen_bluetooth_device_name"
+        android:contentDescription="400"
+        android:textSize="34px" />
+    <TextView
+        android:id="@+id/tv_bt_state"
+        android:layout_width="288px"
+        android:layout_marginStart="160px"
+        android:layout_height="50px"
+        android:layout_marginTop="69px"
+        android:text="@string/screen_bluetooth_text"
+        android:contentDescription="400"
+        android:textColor="@color/hvac_title_color1"
+        android:textSize="28px" />
+    <ImageView
+        android:id="@+id/img_bt_disconnect"
+        android:layout_marginStart="884px"
+        android:layout_marginTop="42px"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:src="@mipmap/ivi_launcher_icon_unconnection_n"/>
+    <View
+        android:layout_width="1000px"
+        android:layout_height="1px"
+        android:layout_marginTop="139px"
+        android:background="@color/c_80_3D" />
+
+</FrameLayout>

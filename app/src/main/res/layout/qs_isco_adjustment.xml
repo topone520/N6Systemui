@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/icon_bg"
+    android:layout_width="240px"
+    android:layout_height="190px"
+    tools:ignore="PxUsage">
+
+    <LinearLayout
+        android:id="@+id/icon_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/deawable_screen_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/icon_image"
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40px"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/icon_text"
+            android:layout_width="wrap_content"
+            android:layout_height="44px"
+            android:layout_marginTop="10px"
+            android:gravity="center"
+            android:scaleType="center"
+            android:textColor="@drawable/selector_qs_text"
+            android:textFontWeight="400"
+            android:textSize="30px" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/icon_adjustment"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="192px"
+        android:layout_marginTop="142px"
+        android:scaleType="center"
+        android:src="@drawable/icon_subscript"
+        android:visibility="gone" />
+</RelativeLayout>

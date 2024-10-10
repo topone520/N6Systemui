@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="56px"
+    android:gravity="center_vertical|end"
+    android:orientation="horizontal"
+    tools:ignore="MissingDefaultResource,PxUsage">
+
+    <ImageView
+        android:id="@+id/icon_user"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:scaleType="center"
+        android:src="@drawable/selector_icon_user_unlogin" />
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10px"
+        android:text="未登录"
+        android:textColor="@color/c2C313A"
+        android:textFontWeight="400"
+        android:textSize="30px" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/icon_ota"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="34px"
+        android:src="@mipmap/ivi_top_icon_ota_message_n_1" />
+
+    <RelativeLayout
+        android:id="@+id/rl_pm_group"
+        android:layout_width="135px"
+        android:layout_height="56px"
+        android:layout_marginStart="38px"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="23px"
+            android:layout_height="28px"
+            android:layout_marginTop="16px"
+            android:src="@mipmap/ivi_top_icon_pm" />
+
+        <TextView
+            android:id="@+id/tv_pm_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="29px"
+            android:text="优"
+            android:textColor="@color/c2C313A"
+            android:textFontWeight="500"
+            android:textSize="32px" />
+
+        <ImageView
+            android:id="@+id/icon_pm"
+            android:layout_width="76px"
+            android:layout_height="80px"
+            android:layout_alignParentEnd="true"
+            android:scaleType="center"
+            android:src="@mipmap/ivi_pm_icon_group"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/icon_water_ions"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="20px"
+        android:contentDescription="TODO"
+        android:scaleType="center"
+        android:src="@mipmap/ivi_top_icon_ion_on"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/icon_car_link"
+        android:layout_width="31px"
+        android:layout_height="31px"
+        android:layout_marginStart="20px"
+        android:src="@drawable/ivi_car_link_connecting"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/icon_camera"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="28px"
+        android:scaleType="center"
+        android:src="@mipmap/ivi_top_icon_camera"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/icon_220v"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="28px"
+        android:scaleType="center"
+        android:src="@mipmap/ivi_top_icon_220v"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/icon_profile"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="28px"
+        android:scaleType="center"
+        android:src="@mipmap/ivi_top_icon_hi_mode"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/icon_usb"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="28px"
+        android:scaleType="center"
+        android:src="@mipmap/ivi_top_icon_usb_off"
+        android:visibility="gone" />
+
+    <com.adayo.systemui.windows.views.IconView
+        android:id="@+id/icon_hotspot"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="28px"
+        android:scaleType="center" />
+
+    <ImageView
+        android:id="@+id/icon_isofix_warning"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="28px"
+        android:scaleType="center"
+        android:src="@mipmap/ivi_top_icon_isofix"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/icon_safety_belt_warning"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="28px"
+        android:scaleType="center"
+        android:src="@mipmap/ivi_top_icon_childrenalarm"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/icon_wireless"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="28px"
+        android:scaleType="center"
+        android:src="@mipmap/ivi_top_icon_wireless_link"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/icon_mic"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="28px"
+        android:scaleType="center"
+        android:src="@mipmap/ivi_top_icon_microphone"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/icon_location"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="28px"
+        android:scaleType="center"
+        android:src="@mipmap/ivi_top_icon_gps"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/guest_mode"
+        android:layout_width="140px"
+        android:layout_height="40px"
+        android:layout_marginStart="28px"
+        android:scaleType="center"
+        android:src="@mipmap/ivi_top_icon_show"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/icon_dvr"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="28px"
+        android:scaleType="center"
+        android:src="@drawable/selector_icon_dvr" />
+
+    <ImageView
+        android:id="@+id/icon_wifi"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="28px"
+        android:scaleType="center"
+        android:src="@drawable/selector_icon_wifi_off" />
+
+    <ImageView
+        android:id="@+id/icon_bluetooth"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="28px"
+        android:scaleType="center"
+        android:src="@drawable/selector_icon_bluetooth" />
+
+    <com.adayo.systemui.windows.views.IconView
+        android:id="@+id/icon_signal"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="28px"
+        android:scaleType="center" />
+
+    <TextView
+        android:id="@+id/operator"
+        android:layout_width="116px"
+        android:layout_height="56px"
+        android:gravity="center"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:textColor="@color/hvac_white"
+        android:textFontWeight="400"
+        android:textSize="24px"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/icon_message"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="28px"
+        android:scaleType="center"
+        android:src="@drawable/selector_icon_message" />
+
+    <ImageView
+        android:id="@+id/icon_volume"
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginStart="28px"
+        android:scaleType="center" />
+
+    <com.adayo.systemui.windows.views.ClockView
+        android:id="@+id/clock"
+        android:layout_width="156px"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_move"
+    android:layout_width="match_parent"
+    android:layout_height="80px"
+    android:textColor="@color/hvac_white"
+    android:textSize="34px"
+    android:gravity="center"
+    android:background="@drawable/seat_move_item_no_select_bg">
+
+</TextView>

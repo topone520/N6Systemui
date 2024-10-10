@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:source="http://schemas.android.com/apk/res-auto"
+    android:layout_width="140px"
+    android:layout_height="720px"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/dock_bar_bg">
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="140px"
+        android:layout_height="110px"
+        android:layout_marginTop="73px"
+        android:scaleType="center"
+        android:src="@drawable/selector_icon_home"/>
+
+    <ImageView
+        android:id="@+id/media"
+        android:layout_width="140px"
+        android:layout_height="110px"
+        android:layout_marginTop="45px"
+        android:scaleType="center"
+        android:src="@drawable/selector_icon_media"/>
+
+    <ImageView
+        android:id="@+id/apps"
+        android:layout_width="140px"
+        android:layout_height="110px"
+        android:layout_marginTop="44px"
+        android:scaleType="center"
+        android:src="@drawable/selector_icon_apps"/>
+
+    <ImageView
+        android:id="@+id/car_setting"
+        android:layout_width="140px"
+        android:layout_height="110px"
+        android:layout_marginTop="45px"
+        android:scaleType="center"
+        android:src="@drawable/selector_icon_car"/>
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="800px"
+    android:layout_height="440px"
+    android:background="@drawable/comm_c2d3540_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:text="@string/hvac_rear_seats"
+        android:textColor="@color/hvac_title_color"
+        android:textSize="40px" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="160px"
+        android:layout_marginLeft="68px"
+        android:layout_marginTop="168px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear_back_row_air"
+            android:layout_width="160px"
+            android:layout_height="160px"
+            android:background="@drawable/hvac_dialog_child_view_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="56px"
+                android:layout_height="56px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="27px"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ivi_ac_icon_switch_n" />
+
+            <TextView
+                android:id="@+id/tv_back_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/hvac_air_ofn"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="@string/hvac_air_ofn"
+                android:textColor="@drawable/hvac_dialog_text_color_select"
+                android:textSize="30px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_face"
+            android:layout_width="160px"
+            android:layout_height="160px"
+            android:layout_marginLeft="96px"
+            android:background="@drawable/hvac_dialog_child_view_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="56px"
+                android:layout_height="56px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="27px"
+                android:src="@mipmap/ivi_ac_dock_icon_r_head_n" />
+
+            <TextView
+                android:id="@+id/tv_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/hvac_blowing_dough"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="@string/hvac_blowing_dough"
+                android:textColor="@drawable/hvac_dialog_text_color_select"
+                android:textSize="30px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_feet"
+            android:layout_width="160px"
+            android:layout_height="160px"
+            android:layout_marginLeft="96px"
+            android:background="@drawable/hvac_dialog_child_view_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="56px"
+                android:layout_height="56px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="27px"
+                android:src="@mipmap/ivi_ac_dock_icon_r_feet_n" />
+
+            <TextView
+                android:id="@+id/tv_feet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/hvac_blowing_feet"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="@string/hvac_blowing_feet"
+                android:textColor="@drawable/hvac_dialog_text_color_select"
+                android:textSize="30px" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

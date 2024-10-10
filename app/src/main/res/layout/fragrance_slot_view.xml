@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_slot"
+        style="@style/FragranceViewGroupStyle">
+
+        <com.adayo.systemui.windows.views.fragrance.FragranceSeekBar
+            android:id="@+id/seek_bar"
+            style="@style/FragranceViewGroupStyle"/>
+
+        <EditText
+            android:id="@+id/edit_title"
+            android:maxLength="8"
+            style="@style/FragranceEditTextTitleStyle"
+            android:background="@android:color/transparent" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_name_save"
+        android:layout_width="200px"
+        android:layout_height="120px"
+        android:layout_gravity="center"
+        android:layout_marginStart="20px"
+        android:textSize="40px"
+        android:text="@string/save"
+        android:visibility="gone" />
+
+</LinearLayout>
+
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_layout"
+    android:layout_width="3840px"
+    android:layout_height="720px"
+    android:background="@mipmap/ivi_menu_down_meditate_bg"
+    tools:ignore="PxUsage">
+
+    <TextView
+        android:id="@+id/dialog_time"
+        android:layout_width="259px"
+        android:layout_height="133px"
+        android:layout_marginStart="2109px"
+        android:layout_marginTop="250px"
+        android:text="@string/massage_time"
+        android:textSize="100px" />
+
+    <TextView
+        android:id="@+id/dialog_week"
+        android:layout_width="wrap_content"
+        android:layout_height="52px"
+        android:layout_marginStart="2006.5px"
+        android:layout_marginTop="440px"
+        android:text="星期日"
+        android:textColor="@color/time"
+        android:textFontWeight="400"
+        android:textSize="36px" />
+
+    <TextView
+        android:id="@+id/dialog_data"
+        android:layout_width="wrap_content"
+        android:layout_height="52px"
+        android:layout_marginStart="2130px"
+        android:layout_marginTop="440px"
+        android:text="7/21"
+        android:textColor="@color/time"
+        android:textFontWeight="400"
+        android:textSize="36px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="52px"
+        android:layout_marginStart="2240px"
+        android:layout_marginTop="440px"
+        android:text="车外温度28℃"
+        android:textColor="@color/time"
+        android:textFontWeight="400"
+        android:textSize="36px" />
+
+
+</FrameLayout>

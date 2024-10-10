@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 未选中状态 -->
+    <item android:state_checked="false">
+        <shape>
+            <solid android:color="#39414F" /> <!-- 未选中时的背景颜色 -->
+            <corners android:radius="8px" /> <!-- 圆角半径，可根据需要调整 -->
+        </shape>
+    </item>
+
+    <!-- 选中状态 -->
+    <item android:state_checked="true">
+        <shape>
+            <solid android:color="#478BC5" /> <!-- 选中时的背景颜色 -->
+            <corners android:radius="8px" /> <!-- 圆角半径，可根据需要调整 -->
+        </shape>
+    </item>
+</selector>

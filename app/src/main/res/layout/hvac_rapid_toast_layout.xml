@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/comm_c39414f_bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="55px"
+        android:layout_marginBottom="55px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rapid_start_toast_time"
+            android:textColor="@color/hvac_white"
+            android:textFontWeight="400"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:textColor="@color/hvac_white"
+            android:textFontWeight="400"
+            android:textSize="36px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="172px"
+        android:layout_height="80px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="686px"
+        android:layout_marginRight="56px"
+        android:background="@drawable/comm_c53647a_bg"
+        android:gravity="center"
+        android:text="@string/rapid_close"
+        android:textColor="@color/hvac_white"
+        android:textFontWeight="400"
+        android:textSize="34px" />
+
+</RelativeLayout>

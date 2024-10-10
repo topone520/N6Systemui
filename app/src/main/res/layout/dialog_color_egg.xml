@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90070707"
+    >
+
+    <LinearLayout
+        android:layout_width="880px"
+        android:layout_height="588px"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_message_center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40px"
+            android:textColor="@color/c_message"
+            android:textFontWeight="500"
+            android:textSize="36px"
+            tools:text="圣诞节祝福" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32px"
+            android:alpha="0.7"
+            android:textColor="@color/c_message"
+            android:textFontWeight="400"
+            android:textSize="30px"
+            tools:text="祝你圣诞快乐，愿你的生活充满幸福和欢笑" />
+
+        <FrameLayout
+            android:layout_width="640px"
+            android:layout_height="320px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40px">
+
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/selector_80_play" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

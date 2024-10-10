@@ -1,0 +1,187 @@
+﻿{
+  "peps_fault_9_text_tip": {
+    "title": "title_warning",
+    "message": "peps_fault_9_text_tip"
+  },
+  "peps_fault_12_text_tip": {
+    "title": "title_warning",
+    "message": "peps_fault_12_text_tip"
+  },
+  "peps_fault_13_text_tip": {
+    "title": "title_warning",
+    "message": "peps_fault_13_text_tip"
+  },
+  "light_system_1_text_tip": {
+    "title": "title_warning",
+    "message": "light_system_1_text_tip"
+  },
+  "light_system_2_text_tip": {
+    "title": "title_warning",
+    "message": "light_system_2_text_tip"
+  },
+  "light_system_3_text_tip": {
+    "title": "title_warning",
+    "message": "light_system_3_text_tip"
+  },
+  "light_system_4_text_tip": {
+    "title": "title_warning",
+    "message": "light_system_4_text_tip"
+  },
+  "light_system_5_text_tip": {
+    "title": "title_warning",
+    "message": "light_system_5_text_tip"
+  },
+  "light_system_6_text_tip": {
+    "title": "title_warning",
+    "message": "light_system_6_text_tip"
+  },
+  "out_sound_text_tip": {
+    "title": "title_warning",
+    "message": "out_sound_text_tip"
+  },
+  "brake_fluid_text_tip": {
+    "title": "title_warning",
+    "message": "brake_fluid_text_tip"
+  },
+  "trunk_fail_text_tip": {
+    "title": "title_warning",
+    "message": "trunk_fail_text_tip"
+  },
+  "tpms_5_text_tip": {
+    "title": "title_warning",
+    "message": "tpms_5_text_tip"
+  },
+  "avap_system_1_text_tip": {
+    "title": "title_warning",
+    "message": "avap_system_1_text_tip"
+  },
+  "avap_system_2_text_tip": {
+    "title": "title_warning",
+    "message": "avap_system_2_text_tip"
+  },
+  "avap_system_3_text_tip": {
+    "title": "title_warning",
+    "message": "avap_system_3_text_tip"
+  },
+  "hot_manager_text_tip": {
+    "title": "title_warning",
+    "message": "hot_manager_text_tip"
+  },
+  "pasc_fail_text_tip": {
+    "title": "title_warning",
+    "message": "pasc_fail_text_tip"
+  },
+  "power_fail_text_tip": {
+    "title": "title_warning",
+    "message": "power_fail_text_tip"
+  },
+  "motor_system_fault_text_tip": {
+    "title": "title_warning",
+    "message": "motor_system_fault_text_tip"
+  },
+  "brak_system_fault_text_tip": {
+    "title": "title_warning",
+    "message": "brak_system_fault_text_tip"
+  },
+  "tpms_sensor_text_tip": {
+    "title": "title_warning",
+    "message": "tpms_sensor_text_tip"
+  },
+  "lost_sensor_text_tip": {
+    "title": "title_warning",
+    "message": "lost_sensor_text_tip"
+  },
+  "low_pressure_1_text_tip": {
+    "title": "title_warning",
+    "message": "low_pressure_1_text_tip"
+  },
+  "low_pressure_2_text_tip": {
+    "title": "title_warning",
+    "message": "low_pressure_2_text_tip"
+  },
+  "lamp_fault_1_text_tip": {
+    "title": "title_warning",
+    "message": "lamp_fault_1_text_tip"
+  },
+  "lamp_fault_2_text_tip": {
+    "title": "title_warning",
+    "message": "lamp_fault_2_text_tip"
+  },
+  "lamp_fault_3_text_tip": {
+    "title": "title_warning",
+    "message": "lamp_fault_3_text_tip"
+  },
+  "lamp_fault_4_text_tip": {
+    "title": "title_warning",
+    "message": "lamp_fault_4_text_tip"
+  },
+  "lamp_fault_5_text_tip": {
+    "title": "title_warning",
+    "message": "lamp_fault_5_text_tip"
+  },
+  "lamp_fault_6_text_tip": {
+    "title": "title_warning",
+    "message": "lamp_fault_6_text_tip"
+  },
+  "lamp_fault_7_text_tip": {
+    "title": "title_warning",
+    "message": "lamp_fault_7_text_tip"
+  },
+  "lamp_fault_8_text_tip": {
+    "title": "title_warning",
+    "message": "lamp_fault_8_text_tip"
+  },
+  "lamp_fault_9_text_tip": {
+    "title": "title_warning",
+    "message": "lamp_fault_9_text_tip"
+  },
+  "lamp_fault_10_text_tip": {
+    "title": "title_warning",
+    "message": "lamp_fault_10_text_tip"
+  },
+  "lamp_fault_11_text_tip": {
+    "title": "title_warning",
+    "message": "lamp_fault_11_text_tip"
+  },
+  "ica_fault_text_tip": {
+    "title": "title_warning",
+    "message": "ica_fault_text_tip"
+  },
+  "lss_fault_text_tip": {
+    "title": "title_warning",
+    "message": "lss_fault_text_tip"
+  },
+  "fcwaeb_fault_text_tip": {
+    "title": "title_warning",
+    "message": "fcwaeb_fault_text_tip"
+  },
+  "lcadow_fault_text_tip": {
+    "title": "title_warning",
+    "message": "lcadow_fault_text_tip"
+  },
+  "tsr_fault_text_tip": {
+    "title": "title_warning",
+    "message": "tsr_fault_text_tip"
+  },
+  "rcta_fault_text_tip": {
+    "title": "title_warning",
+    "message": "rcta_fault_text_tip"
+  },
+  "rcw_fault_text_tip": {
+    "title": "title_warning",
+    "message": "rcw_fault_text_tip"
+  },
+  "hma_fault_text_tip": {
+    "title": "title_warning",
+    "message": "hma_fault_text_tip"
+  },
+  "drv_fault_text_tip": {
+    "title": "title_warning",
+    "message": "drv_fault_text_tip"
+  },
+  "front_cam_text_tip": {
+    "title": "title_warning",
+    "message": "front_cam_text_tip"
+  }
+}
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="616px"
+    android:layout_height="288px"
+    android:background="@drawable/dialog_ccp_bg"
+    tools:ignore="MissingConstraints,PxUsage,HardcodedText">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48px"
+        android:layout_marginStart="228px"
+        android:text="亮度调节"
+        android:textFontWeight="400"
+        android:textSize="40px"
+        android:textColor="#CCCCCC"
+        />
+    <com.adayo.systemui.windows.views.ScreenVolumeSeekBar
+        android:id="@+id/brightness"
+        android:layout_width="520px"
+        android:layout_height="100px"
+        android:layout_marginTop="140px"
+        android:layout_marginStart="48px"
+        />
+    <ImageView
+        android:layout_width="56px"
+        android:layout_height="56px"
+        android:layout_marginTop="162px"
+        android:layout_marginStart="80px"
+        android:src="@mipmap/ivi_menu_icon_brightness_n"
+        />
+    <TextView
+        android:id="@+id/brightness_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160px"
+        android:layout_marginStart="488px"
+        android:text="20"
+        android:textFontWeight="400"
+        android:textSize="40px"
+        android:textColor="#B3FFFFFF"
+        />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 未选中状态 -->
+    <item android:state_checked="true" android:drawable="@mipmap/vtp_ac_icon_cycle_inside_n_1" >
+
+    </item>
+
+    <!-- 选中状态 -->
+    <item android:state_checked="false" android:drawable="@mipmap/vtp_dock_icon_internaicircuiation_n_1">
+
+    </item>
+</selector>

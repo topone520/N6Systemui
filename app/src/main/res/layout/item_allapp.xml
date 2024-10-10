@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200px"
+    android:layout_height="208px"
+    android:layout_marginStart="40px"
+    tools:ignore="PxUsage"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/gridview_item_select">
+
+    <LinearLayout
+        android:id="@+id/la_parent"
+        android:layout_width="200px"
+        android:layout_height="184px"
+        android:layout_marginTop="24px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:src="@mipmap/ivi_home_allapp_folder_icon_120" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="44px"
+            android:layout_marginTop="20px"
+            android:gravity="center"
+            android:text="@string/screen_scene_file_management"
+            android:textColor="#FFFFFF"
+            android:textFontWeight="400"
+            android:textSize="29px" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/delete_icon"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_marginStart="138px"
+        android:layout_marginTop="2px"
+        android:background="@drawable/selector_app_delete_icon"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/rg_hotspot_bg_selector_blue" android:state_selected="true">
+        <shape>
+            <corners android:radius="8px"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/transparent" android:state_selected="false">
+        <shape>
+            <corners android:radius="8px"/>
+        </shape>
+    </item>
+</selector>

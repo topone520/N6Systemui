@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/comm_c85070aof_bg"
+        android:paddingLeft="80px"
+        android:paddingTop="32px"
+        android:paddingRight="80px"
+        android:paddingBottom="32px"
+        android:text="@string/hvac_rapid_three_toast"
+        android:textColor="@color/hvac_white"
+        android:textSize="32px" />
+
+
+</RelativeLayout>

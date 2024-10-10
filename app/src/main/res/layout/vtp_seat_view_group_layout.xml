@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1920px"
+    android:layout_height="960px">
+
+    <!--    前排-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/con_front_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/vtp_ac_set_front_bg"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="155dp">
+
+        <com.adayo.systemui.windows.views.seat.VtpSeatVentilateImageView
+            android:id="@+id/re_left_front_ventilate"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_marginLeft="557px"
+            android:layout_marginBottom="347px"
+            android:src="@mipmap/vtp_ac_icon_wind_n"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.adayo.systemui.windows.views.seat.VtpSeatHeatImageView
+            android:id="@+id/re_left_front_heat"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_marginLeft="557px"
+            android:layout_marginBottom="100px"
+            android:src="@mipmap/vtp_ac_icon_hot_n"
+            app:layout_constraintBottom_toTopOf="@id/re_left_front_ventilate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_goneMarginBottom="430px" />
+
+        <com.adayo.systemui.windows.views.seat.VtpSeatVentilateImageView
+            android:id="@+id/re_right_front_ventilate"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_marginRight="556px"
+            android:layout_marginBottom="347px"
+            android:src="@mipmap/vtp_ac_icon_wind_n"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.adayo.systemui.windows.views.seat.VtpSeatHeatImageView
+            android:id="@+id/re_right_front_heat"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_marginRight="556px"
+            android:layout_marginBottom="100px"
+            android:src="@mipmap/vtp_ac_icon_hot_n"
+            app:layout_constraintBottom_toTopOf="@id/re_right_front_ventilate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_goneMarginBottom="430px" />
+
+        <TextView
+            android:id="@+id/tv_left_front_massage_mode"
+            android:layout_width="180px"
+            android:layout_height="72px"
+            android:layout_marginStart="525px"
+            android:layout_marginTop="259px"
+            android:background="@drawable/comm_c4972b8_bg"
+            android:gravity="center"
+            android:text="@string/seat_move1"
+            android:textColor="@color/hvac_white"
+            android:textSize="32px"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.adayo.systemui.windows.views.seat.VtpSeatMassageImageView
+            android:id="@+id/iv_left_front_massage"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_marginStart="560px"
+            android:layout_marginTop="379px"
+            android:background="@mipmap/vtp_ac_icon_massage_n"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_right_front_massage_mode"
+            android:layout_width="180px"
+            android:layout_height="72px"
+            android:layout_marginTop="259px"
+            android:layout_marginEnd="525px"
+            android:background="@drawable/comm_c8039414f_bg"
+            android:gravity="center"
+            android:text="@string/seat_move7"
+            android:textColor="@color/white70"
+            android:textSize="32px"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.adayo.systemui.windows.views.seat.VtpSeatMassageImageView
+            android:id="@+id/iv_right_front_massage"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_marginTop="379px"
+            android:layout_marginEnd="557px"
+            android:background="@mipmap/vtp_ac_icon_massage_n"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_driver_seat_set"
+            android:layout_width="370px"
+            android:layout_height="90px"
+            android:layout_marginStart="100px"
+            android:layout_marginBottom="40px"
+            android:background="@drawable/ahape_front_heat_grep"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.adayo.systemui.windows.views.seat.VtpSeatSteeringImageView
+                android:id="@+id/re_left_front_steering"
+                android:layout_width="185px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="14px"
+                android:src="@mipmap/vtp_dock_icon_steeringwheel_n" />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="24px"
+                android:layout_gravity="center"
+                android:background="@color/c1AFFFFFF" />
+
+            <ImageView
+                android:id="@+id/iv_left_front_heat_grep"
+                android:layout_width="185px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="14px"
+                android:src="@mipmap/vtp_dock_icon_autoheat_n" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/iv_all_front_close"
+            android:layout_width="190px"
+            android:layout_height="90px"
+            android:layout_marginBottom="139px"
+            android:background="@drawable/comm_c313949_bg_r8"
+            android:padding="14px"
+            android:src="@mipmap/vtp_ac_button_switch_n"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/open_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17px"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/hvac_back_raw"
+                android:textColor="@color/vtp_seat_text_color"
+                android:textSize="34px" />
+
+            <ImageView
+                android:layout_width="56px"
+                android:layout_height="56px"
+                android:src="@mipmap/vtp_ac_icon_slidebown_p" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/con_area_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/vtp_ac_set_behind_bg"
+        android:visibility="gone">
+
+
+        <com.adayo.systemui.windows.views.seat.VtpSeatHeatImageView
+            android:id="@+id/re_left_area_heat"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_marginLeft="557px"
+            android:layout_marginTop="425px"
+            android:layout_marginBottom="100px"
+            android:src="@mipmap/vtp_ac_icon_hot_n"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginBottom="430px" />
+
+        <com.adayo.systemui.windows.views.seat.VtpSeatHeatImageView
+            android:id="@+id/re_right_area_heat"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_marginTop="425px"
+            android:layout_marginRight="556px"
+            android:layout_marginBottom="100px"
+            android:src="@mipmap/vtp_ac_icon_hot_n"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginBottom="430px" />
+
+
+        <!--        //按摩相关-->
+        <TextView
+            android:id="@+id/tv_left_area_massage_mode"
+            android:layout_width="180px"
+            android:layout_height="72px"
+            android:layout_marginStart="525px"
+            android:layout_marginTop="259px"
+            android:background="@drawable/comm_c4972b8_bg"
+            android:gravity="center"
+            android:text="@string/seat_move1"
+            android:textColor="@color/hvac_title_color"
+            android:textSize="32px"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.adayo.systemui.windows.views.seat.VtpSeatMassageImageView
+            android:id="@+id/iv_left_area_massage"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_marginStart="560px"
+            android:layout_marginTop="379px"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_right_area_massage_mode"
+            android:layout_width="180px"
+            android:layout_height="72px"
+            android:layout_marginTop="259px"
+            android:layout_marginEnd="525px"
+            android:background="@drawable/comm_c8039414f_bg"
+            android:gravity="center"
+            android:text="@string/seat_move7"
+            android:textColor="@color/hvac_title_color"
+            android:textSize="32px"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.adayo.systemui.windows.views.seat.VtpSeatMassageImageView
+            android:id="@+id/iv_right_area_massage"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_marginTop="379px"
+            android:layout_marginEnd="557px"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/open_front"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="184px"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="56px"
+                android:layout_height="56px"
+                android:src="@mipmap/vtp_ac_icon_slideup_p" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/hvac_front_raw"
+                android:textColor="@color/seat_text_color"
+                android:textSize="34px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/iv_all_area_close"
+            android:layout_width="190px"
+            android:layout_height="90px"
+            android:layout_marginBottom="139px"
+            android:background="@drawable/comm_c313949_bg_r8"
+            android:padding="14px"
+            android:src="@mipmap/vtp_ac_button_switch_n"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/ivi_seat_close"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="72px"
+        android:layout_marginTop="72px"
+        android:src="@mipmap/vtp_ac_icon_back_n"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rg_seat_page_set_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68px"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_heat"
+            android:layout_width="200px"
+            android:layout_height="68px"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/tv_heating_and_ventilation"
+            android:textColor="@color/rb_seat_view_set"
+            android:textSize="36px" />
+
+        <RadioButton
+            android:id="@+id/rb_massage"
+            android:layout_width="200px"
+            android:layout_height="68px"
+            android:layout_marginStart="2px"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/tv_seat_massage"
+            android:textColor="@color/rb_seat_view_set"
+            android:textSize="36px" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tv_adjust"
+        android:layout_width="180px"
+        android:layout_height="90px"
+        android:layout_marginEnd="100px"
+        android:layout_marginBottom="40px"
+        android:background="@drawable/comm_c313949_bg_r8"
+        android:gravity="center"
+        android:text="@string/seat_adjust"
+        android:textColor="@color/vtp_seat_text_color"
+        android:textSize="34px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

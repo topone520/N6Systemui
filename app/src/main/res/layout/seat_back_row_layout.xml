@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1368px"
+    android:layout_height="640px"
+    android:background="@drawable/comm_c2d3540_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:text="@string/back_row_seat_adjust"
+        android:textColor="@color/hvac_title_color"
+        android:textFontWeight="400"
+        android:textSize="40px" />
+
+    <ImageView
+        android:layout_width="307px"
+        android:layout_height="423px"
+        android:layout_marginLeft="181px"
+        android:layout_marginTop="154px"
+        android:background="@mipmap/ivi_ac_seat_seat_left" />
+
+    <ImageView
+        android:layout_width="307px"
+        android:layout_height="423px"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="154px"
+        android:layout_marginRight="181px"
+        android:background="@mipmap/ivi_ac_seat_seat_right" />
+
+    <com.adayo.systemui.windows.views.seat.HorSlideView
+        android:id="@+id/left_area_back"
+        android:layout_width="160px"
+        android:layout_height="44px"
+        android:layout_marginLeft="172px"
+        android:layout_marginTop="307px" />
+
+    <com.adayo.systemui.windows.views.seat.HorSlideView
+        android:id="@+id/right_area_back"
+        android:layout_width="160px"
+        android:layout_height="44px"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="307px"
+        android:layout_marginRight="172px" />
+
+
+    <TextView
+        android:id="@+id/tv_collapse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="84px"
+        android:layout_marginRight="567px"
+        android:background="@drawable/seat_button_bg"
+        android:gravity="center"
+        android:padding="20px"
+        android:text="@string/one_click_collapse"
+        android:textColor="@drawable/hvac_text_select" />
+
+</RelativeLayout>

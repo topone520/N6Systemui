@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1000px"
+    android:layout_height="440px"
+    android:background="@drawable/comm_c2d3540_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:text="@string/hvac_rear_seats"
+        android:textColor="@color/hvac_white"
+        android:textSize="40px" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="190px"
+        android:layout_marginLeft="68px"
+        android:layout_marginTop="168px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear_back_row_air"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:background="@drawable/comm_c39414f_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="56px"
+                android:layout_height="56px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40px"
+                android:src="@mipmap/vtp_ac_button_switch_p" />
+
+            <TextView
+                android:id="@+id/tv_back_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="@string/hvac_air_ofn"
+                android:textColor="@color/white40"
+                android:textSize="30px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_face"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginLeft="40px"
+            android:background="@drawable/comm_c39414f_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="56px"
+                android:layout_height="56px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40px"
+                android:src="@mipmap/vtp_ac_dock_icon_r_head_n" />
+
+            <TextView
+                android:id="@+id/tv_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="@string/hvac_blowing_dough"
+                android:textColor="@color/white40"
+                android:textSize="30px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_feet"
+            android:layout_width="240px"
+            android:layout_height="190px"
+            android:layout_marginLeft="40px"
+            android:background="@drawable/comm_c39414f_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="56px"
+                android:layout_height="56px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40px"
+                android:src="@mipmap/vtp_ac_dock_icon_r_feet_n" />
+
+            <TextView
+                android:id="@+id/tv_feet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="@string/hvac_blowing_feet"
+                android:textColor="@color/white40"
+                android:textSize="30px" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

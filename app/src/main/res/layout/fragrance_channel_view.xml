@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.adayo.systemui.windows.views.fragrance.FragranceSeekBar
+        android:id="@+id/fragrance_a_view"
+        style="@style/FragranceViewGroupStyle" />
+
+    <com.adayo.systemui.windows.views.fragrance.FragranceSeekBar
+        android:id="@+id/fragrance_b_view"
+        style="@style/FragranceViewGroupStyle"
+        android:layout_marginTop="40px" />
+
+    <com.adayo.systemui.windows.views.fragrance.FragranceSeekBar
+        android:id="@+id/fragrance_c_view"
+        style="@style/FragranceViewGroupStyle"
+        android:layout_marginTop="40px" />
+
+</LinearLayout>

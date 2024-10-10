@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.adayo.systemui.windows.views.MyConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="110px">
+
+    <View
+        android:id="@+id/left_view"
+        android:layout_width="1200px"
+        android:layout_height="110px" />
+
+    <com.adayo.systemui.windows.views.hvac.ShortcutSeatHeatImageView
+        android:id="@+id/iv_driver_heat"
+        android:layout_width="100px"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="82px"
+        android:padding="10px"
+        android:src="@mipmap/ivi_menu_down_icon_driver_seats_heat_n"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/left_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.adayo.systemui.windows.views.hvac.HorTempSelectorView
+        android:id="@+id/hor_driver_temp"
+        android:layout_width="408px"
+        android:layout_height="100px"
+        app:layout_constraintLeft_toRightOf="@+id/iv_driver_heat" />
+
+
+    <com.adayo.systemui.windows.views.hvac.HvacWinSpeedImageView
+        android:id="@+id/iv_speed_adjust"
+        android:layout_width="102px"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/hor_driver_temp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.adayo.systemui.windows.views.hvac.HorTempSelectorView
+        android:id="@+id/hor_copilot_temp"
+        android:layout_width="403px"
+        android:layout_height="110px"
+        app:layout_constraintLeft_toRightOf="@+id/iv_speed_adjust" />
+
+    <com.adayo.systemui.windows.views.hvac.ShortcutSeatHeatImageView
+        android:id="@+id/iv_copilot_heat"
+        android:layout_width="100px"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="80px"
+        android:padding="10px"
+        android:src="@mipmap/ivi_menu_down_icon_copilot_seats_heat_n"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/hor_copilot_temp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/right_view"
+        android:layout_width="1200px"
+        android:layout_height="110px"
+        app:layout_constraintLeft_toRightOf="@+id/iv_copilot_heat" />
+</com.adayo.systemui.windows.views.MyConstraintLayout>
+

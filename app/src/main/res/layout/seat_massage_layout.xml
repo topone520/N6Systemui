@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1184px"
+    android:layout_height="440px"
+    android:background="@drawable/comm_c2d3540_bg"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/SEATTextViewComm"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40px"
+        android:text="@string/hvac_seat_massage_move"
+        android:textFontWeight="400"
+        android:textSize="40px" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/seat_mag_rlv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px" />
+
+</LinearLayout>

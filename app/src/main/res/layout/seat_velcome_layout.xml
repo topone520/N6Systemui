@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SeatAdjustButtonStyle"
+    android:background="@drawable/seat_message_usher">
+
+    <com.adayo.systemui.windows.views.SwitchButtonVe
+        android:id="@+id/seat_velcome"
+        android:layout_width="72px"
+        android:layout_height="44px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40px" />
+
+    <TextView
+        android:id="@+id/tv_velcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40px"
+        android:layout_toRightOf="@+id/seat_velcome"
+        android:contentDescription="@string/seat_host_welcome"
+        android:text="@string/seat_host_welcome"
+        android:textColor="@color/hvac_title_color"
+        android:textFontWeight="400"
+        android:textSize="34px" />
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="672px"
+    android:layout_height="204px"
+    tools:ignore="PxUsage">
+
+    <TextView
+        android:id="@+id/tv_bluetooth_connect_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8px"
+        android:text="@string/screen_bluetooth_connect"
+        android:textColor="@color/c_80_FF"
+        android:textFontWeight="400"
+        android:textSize="24px" />
+
+    <RelativeLayout
+        android:id="@+id/rv_bluetooth_connect_group"
+        android:layout_width="672px"
+        android:layout_height="100px"
+        android:layout_marginTop="44px">
+
+        <ImageView
+            android:id="@+id/iv_phone_icon"
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ivi_menu_down_icon_phones_n"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_device_bluetooth_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="76px"
+            android:text="@string/screen_bluetooth_device_name"
+            android:textColor="@color/c_FF_49"
+            android:textFontWeight="400"
+            android:textSize="32px"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:id="@+id/iv_device_bluetooth_more"
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ivi_menu_down_icon_pull_down_n"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_nearby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/screen_bluetooth_area"
+        android:textColor="@color/c_80_FF"
+        android:textFontWeight="400"
+        android:textSize="24px" />
+
+</RelativeLayout>

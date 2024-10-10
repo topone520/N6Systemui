@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.adayo.systemui.windows.views.BlurTransitionView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btv_volume"
+    android:layout_width="1420px"
+    android:layout_height="464px"
+    android:background="@drawable/dialog_negative_bg"
+    tools:ignore="PxUsage,ContentDescription">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60px"
+        android:layout_marginTop="40px">
+
+        <TextView
+            android:id="@+id/mediaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/media"
+            android:textColor="@color/hvac_white"
+            android:textFontWeight="400"
+            android:textSize="32px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.adayo.systemui.windows.views.VolumeSeekBar
+            android:id="@+id/media_volume"
+            android:layout_width="600px"
+            android:layout_height="100px"
+            android:layout_marginTop="18px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mediaText" />
+
+        <ImageView
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_marginStart="42px"
+            android:layout_marginTop="40px"
+            android:background="@mipmap/ivi_top_icon_voicepop_media"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mediaText" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/mediaValue"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="60px"-->
+        <!--            android:text="16"-->
+        <!--            android:textSize="40px"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textFontWeight="400"-->
+        <!--            android:layout_marginEnd="40px"-->
+        <!--            android:layout_marginTop="38px"-->
+        <!--            android:gravity="center"-->
+        <!--            android:focusable="false"-->
+        <!--            android:focusableInTouchMode="false"-->
+        <!--            app:layout_constraintEnd_toEndOf="@id/media_volume"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/mediaText" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="760px"
+        android:layout_marginTop="40px">
+
+        <TextView
+            android:id="@+id/ringText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ring"
+            android:textColor="@color/hvac_white"
+            android:textFontWeight="400"
+            android:textSize="32px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.adayo.systemui.windows.views.VolumeSeekBar
+            android:id="@+id/ring_volume"
+            android:layout_width="600px"
+            android:layout_height="100px"
+            android:layout_marginTop="18px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ringText" />
+
+        <ImageView
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_marginStart="42px"
+            android:layout_marginTop="40px"
+            android:background="@mipmap/ivi_top_icon_voicepop_message"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ringText" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/ringValue"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="60px"-->
+        <!--            android:text="16"-->
+        <!--            android:textSize="40px"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textFontWeight="400"-->
+        <!--            android:layout_marginEnd="40px"-->
+        <!--            android:layout_marginTop="38px"-->
+        <!--            android:gravity="center"-->
+        <!--            android:focusable="false"-->
+        <!--            android:focusableInTouchMode="false"-->
+        <!--            app:layout_constraintEnd_toEndOf="@id/ring_volume"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/ringText" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60px"
+        android:layout_marginTop="242px">
+
+        <TextView
+            android:id="@+id/phoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:textColor="@color/hvac_white"
+            android:textFontWeight="400"
+            android:textSize="32px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.adayo.systemui.windows.views.VolumeSeekBar
+            android:id="@+id/phone_volume"
+            android:layout_width="600px"
+            android:layout_height="100px"
+            android:layout_marginTop="18px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phoneText" />
+
+        <ImageView
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_marginStart="42px"
+            android:layout_marginTop="40px"
+            android:background="@mipmap/ivi_top_icon_voicepop_phone"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phoneText" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/phoneValue"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="60px"-->
+        <!--            android:text="16"-->
+        <!--            android:textSize="40px"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textFontWeight="400"-->
+        <!--            android:layout_marginEnd="40px"-->
+        <!--            android:layout_marginTop="38px"-->
+        <!--            android:gravity="center"-->
+        <!--            android:focusable="false"-->
+        <!--            android:focusableInTouchMode="false"-->
+        <!--            app:layout_constraintEnd_toEndOf="@id/phone_volume"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/phoneText" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="760px"
+        android:layout_marginTop="242px">
+
+        <TextView
+            android:id="@+id/naviText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/navi"
+            android:textColor="@color/hvac_white"
+            android:textFontWeight="400"
+            android:textSize="32px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.adayo.systemui.windows.views.VolumeSeekBar
+            android:id="@+id/navi_volume"
+            android:layout_width="600px"
+            android:layout_height="100px"
+            android:layout_marginTop="18px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/naviText" />
+
+        <ImageView
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_marginStart="42px"
+            android:layout_marginTop="40px"
+            android:background="@mipmap/ivi_top_icon_voicepop_navigation"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/naviText" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/naviValue"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="60px"-->
+        <!--            android:text="16"-->
+        <!--            android:textSize="40px"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textFontWeight="400"-->
+        <!--            android:layout_marginEnd="40px"-->
+        <!--            android:layout_marginTop="38px"-->
+        <!--            android:gravity="center"-->
+        <!--            android:focusable="false"-->
+        <!--            android:focusableInTouchMode="false"-->
+        <!--            app:layout_constraintEnd_toEndOf="@id/navi_volume"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/naviText" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.adayo.systemui.windows.views.BlurTransitionView>

@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hvac_view_group"
+    android:layout_width="3840px"
+    android:layout_height="720px"
+    android:background="@mipmap/ivi_comm_day_bg"
+    android:paddingLeft="140px"
+    android:paddingTop="66px">
+
+    <RelativeLayout
+        android:id="@+id/iv_hvac_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-140px"
+        android:layout_marginTop="-66px"
+        android:background="@mipmap/ivi_ac_bg" />
+
+    <View
+        android:id="@+id/hvac_view_id1"
+        android:layout_width="1000px"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-66px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/hvac_view_id2"
+        android:layout_width="1000px"
+        android:layout_height="match_parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_hvac_seat"
+        android:layout_width="160px"
+        android:layout_height="68px"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="8px"
+        android:background="@drawable/bg_hvac_btn_radius34"
+        android:contentDescription="@string/hvac_seat"
+        android:gravity="center"
+        android:text="@string/hvac_seat"
+        android:textColor="@color/text_color_normals"
+        android:textSize="34px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_hvac_fragrance"
+        android:layout_width="160px"
+        android:layout_height="68px"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="8px"
+        android:background="@drawable/bg_hvac_btn_radius34"
+        android:contentDescription="@string/hvac_fragrance"
+        android:gravity="center"
+        android:text="@string/hvac_fragrance"
+        android:textColor="@color/text_color_normals"
+        android:textSize="34px"
+        app:layout_constraintLeft_toRightOf="@+id/tv_hvac_seat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <com.adayo.systemui.windows.views.hvac.HvacMDVAdjustView-->
+    <!--        android:id="@+id/mdv_left_adjust"-->
+    <!--        android:layout_width="421px"-->
+    <!--        android:layout_height="250px"-->
+    <!--        android:layout_marginLeft="921px"-->
+    <!--        android:layout_marginTop="193px"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--   <com.adayo.systemui.windows.views.hvac.HvacMDVAdjustView
+           android:id="@+id/mdv_left_center_adjust"
+           android:layout_width="353px"
+           android:layout_height="308px"
+           android:layout_marginLeft="1526px"
+           android:layout_marginTop="287px"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <com.adayo.systemui.windows.views.hvac.HvacMDVAdjustView
+           android:id="@+id/mdv_right_center_adjust"
+           android:layout_width="353px"
+           android:layout_height="308px"
+           android:layout_marginTop="287px"
+           android:layout_marginRight="1515px"
+           app:layout_constraintRight_toRightOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <com.adayo.systemui.windows.views.hvac.HvacMDVAdjustView
+           android:id="@+id/mdv_right_adjust"
+           android:layout_width="421px"
+           android:layout_height="250px"
+           android:layout_marginTop="193px"
+           android:layout_marginRight="950px"
+           app:layout_constraintRight_toRightOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />-->
+
+    <com.adayo.systemui.windows.views.hvac.HvacMDVShowView
+        android:id="@+id/mdv_show_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.adayo.systemui.windows.views.hvac.EasyPickerView
+        android:id="@+id/driver_temp_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="326px"
+        android:layout_marginTop="53px"
+        android:background="@drawable/gridview_item_select"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusRight="@id/copilot_temp_select"
+        android:nextFocusDown="@id/ll_wind_driver_feet"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hvac_fragrance" />
+
+    <com.adayo.systemui.windows.views.hvac.EasyPickerView
+        android:id="@+id/copilot_temp_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="326px"
+        android:background="@drawable/gridview_item_select"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@id/driver_temp_select"
+        android:nextFocusRight="@id/ll_wind_driver_feet"
+        android:nextFocusDown="@id/ll_wind_driver_feet"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/driver_temp_select" />
+
+    <LinearLayout
+        android:id="@+id/ll_main_wind_direction"
+        android:layout_width="632px"
+        android:layout_height="100px"
+        android:layout_marginLeft="15px"
+        android:background="@mipmap/ivi_ac_control_bar_bg_1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_wind_driver_feet"
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="80px"
+            android:background="@drawable/gridview_item_select"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@id/driver_temp_select"
+            android:nextFocusRight="@id/ll_wind_driver_face"
+            android:nextFocusUp="@id/driver_temp_select">
+
+            <CheckBox
+                android:id="@+id/cb_wind_driver_feet"
+                style="@style/HVACCheckbox56"
+                android:background="@drawable/cb_wind_driver_feet" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wind_driver_face"
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="68px"
+            android:background="@drawable/gridview_item_select"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@id/ll_wind_driver_feet"
+            android:nextFocusRight="@id/ll_wind_driver_defrost"
+            android:nextFocusUp="@id/driver_temp_select">
+
+            <CheckBox
+                android:id="@+id/cb_wind_driver_face"
+                style="@style/HVACCheckbox56"
+                android:background="@drawable/cb_wind_driver_face" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wind_driver_defrost"
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="68px"
+            android:background="@drawable/gridview_item_select"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@id/ll_wind_driver_face"
+            android:nextFocusRight="@id/ll_driver_blow"
+            android:nextFocusUp="@id/driver_temp_select">
+
+            <CheckBox
+                android:id="@+id/cb_wind_driver_defrost"
+                style="@style/HVACCheckbox56"
+                android:background="@drawable/cb_wind_driver_defrost" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="32px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50px"
+            android:background="@color/c10ffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll_driver_blow"
+            android:layout_width="120px"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@id/cb_wind_driver_defrost"
+            android:nextFocusRight="@id/cb_hvac_switch"
+            android:nextFocusUp="@id/driver_temp_select"
+            android:background="@drawable/gridview_item_select">
+            <TextView
+                android:id="@+id/tv_driver_blow"
+                android:layout_width="120px"
+                android:layout_height="80px"
+                android:contentDescription="@string/hvac_direct_blow"
+                android:gravity="center"
+                android:text="@string/hvac_direct_blow"
+                android:textColor="@drawable/hvac_text_select"
+                android:textSize="34px" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_center_move"
+        android:layout_width="2490px"
+        android:layout_height="120px"
+        android:layout_marginLeft="605px"
+        android:background="@mipmap/ivi_ac_control_bar_bg_3"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_hvac_switch"
+            android:layout_width="120px"
+            android:layout_height="80px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="64px"
+            android:background="@drawable/gridview_item_select"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:nextFocusLeft="@id/ll_driver_blow"
+            android:nextFocusRight="@id/ll_wind_circulate"
+            android:nextFocusUp="@id/driver_temp_select">
+
+            <CheckBox
+                android:id="@+id/cb_hvac_switch"
+                style="@style/HVACCheckbox120"
+                android:layout_gravity="center"
+                android:background="@drawable/cb_hvac_switch" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="24px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24px"
+            android:background="@color/c10ffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll_wind_circulate"
+            android:layout_width="120px"
+            android:layout_height="80px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:background="@drawable/gridview_item_select"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:nextFocusLeft="@id/ll_hvac_switch"
+            android:nextFocusRight="@id/ll_wind_window"
+            android:nextFocusUp="@id/driver_temp_select">
+
+            <CheckBox
+                android:id="@+id/cb_wind_circulate"
+                style="@style/HVACCheckbox120"
+                android:background="@drawable/cb_wind_circulate"
+                android:checked="true" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="24px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24px"
+            android:background="@color/c10ffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll_wind_window"
+            android:layout_width="120px"
+            android:layout_height="80px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:background="@drawable/gridview_item_select"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:nextFocusLeft="@id/ll_wind_circulate"
+            android:nextFocusRight="@id/ll_tv_auto"
+            android:nextFocusUp="@id/driver_temp_select">
+
+            <CheckBox
+                android:id="@+id/cb_wind_window"
+                style="@style/HVACCheckbox120"
+                android:background="@drawable/cb_wind_window" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="24px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24px"
+            android:background="@color/c10ffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll_tv_auto"
+            android:layout_width="120px"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@id/cb_wind_window"
+            android:nextFocusRight="@id/ll_tv_ac"
+            android:nextFocusUp="@id/driver_temp_select"
+            android:background="@drawable/gridview_item_select">
+            <TextView
+                android:id="@+id/tv_auto"
+                android:layout_width="120px"
+                android:layout_height="80px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="24px"
+                android:contentDescription="@string/hvac_wind_auto"
+                android:gravity="center"
+                android:text="@string/hvac_wind_auto"
+                android:textColor="@drawable/hvac_text_select"
+                android:textSize="36px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1052px"
+            android:layout_height="90px"
+            android:layout_marginLeft="25px"
+            android:background="@mipmap/ivi_ac_control_bar_bg_4"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_tv_ac"
+                android:layout_width="120px"
+                android:layout_height="80px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="68px"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusLeft="@id/ll_tv_auto"
+                android:nextFocusRight="@id/win_speed_adjust_view"
+                android:nextFocusUp="@id/driver_temp_select"
+                android:background="@drawable/gridview_item_select">
+                <TextView
+                    android:id="@+id/tv_ac"
+                    android:layout_width="120px"
+                    android:layout_height="80px"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/hvac_wind_ac"
+                    android:gravity="center"
+                    android:text="@string/hvac_wind_ac"
+                    android:textColor="@drawable/hvac_text_select"
+                    android:textSize="36px" />
+            </LinearLayout>
+
+            <com.adayo.systemui.windows.views.hvac.HvacWinSpeedAdjustView
+                android:id="@+id/win_speed_adjust_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/gridview_item_select"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusLeft="@id/ll_tv_ac"
+                android:nextFocusRight="@id/ll_tv_sync"
+                android:nextFocusUp="@id/driver_temp_select" />
+
+            <LinearLayout
+                android:id="@+id/ll_tv_sync"
+                android:layout_width="144px"
+                android:layout_height="80px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="24px"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusLeft="@id/win_speed_adjust_view"
+                android:nextFocusRight="@id/ll_iv_air_protect"
+                android:nextFocusUp="@id/driver_temp_select"
+                android:background="@drawable/gridview_item_select">
+                <TextView
+                    android:id="@+id/tv_sync"
+                    android:layout_width="144px"
+                    android:layout_height="80px"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/hvac_temp_sync"
+                    android:gravity="center"
+                    android:text="@string/hvac_temp_sync"
+                    android:textColor="@drawable/hvac_text_select"
+                    android:textSize="34px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_iv_air_protect"
+            android:layout_width="144px"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@id/ll_tv_sync"
+            android:nextFocusRight="@id/ll_tv_eco"
+            android:nextFocusUp="@id/driver_temp_select"
+            android:background="@drawable/gridview_item_select">
+            <ImageView
+                android:id="@+id/iv_air_protect"
+                style="@style/HVACCheckbox120"
+                android:layout_gravity="center"
+                android:src="@mipmap/ivi_ac_icon_pop_n" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="24px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24px"
+            android:background="@color/c10ffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll_tv_eco"
+            android:layout_width="120px"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@id/ll_iv_air_protect"
+            android:nextFocusRight="@id/ll_tv_intelligent"
+            android:nextFocusUp="@id/driver_temp_select"
+            android:background="@drawable/gridview_item_select">
+            <TextView
+                android:id="@+id/tv_eco"
+                android:layout_width="120px"
+                android:layout_height="80px"
+                android:layout_gravity="center"
+                android:contentDescription="@string/hvac_energy_move"
+                android:gravity="center"
+                android:text="@string/hvac_energy_move"
+                android:textColor="@drawable/hvac_eco_select"
+                android:textSize="36px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="24px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24px"
+            android:background="@color/c10ffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll_tv_intelligent"
+            android:layout_width="120px"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@id/ll_tv_eco"
+            android:nextFocusRight="@id/ll_tv_back_row"
+            android:nextFocusUp="@id/driver_temp_select"
+            android:background="@drawable/gridview_item_select">
+            <TextView
+                android:id="@+id/tv_intelligent"
+                android:layout_width="120px"
+                android:layout_height="80px"
+                android:layout_gravity="center"
+                android:background="@drawable/gridview_item_select"
+                android:contentDescription="@string/hvac_intelligence"
+                android:gravity="center"
+                android:text="@string/hvac_intelligence"
+                android:textColor="@color/text_color_normals"
+                android:textSize="36px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="24px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24px"
+            android:background="@color/c10ffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll_tv_back_row"
+            android:layout_width="120px"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@id/ll_tv_intelligent"
+            android:nextFocusRight="@id/ll_tv_copilot_blow"
+            android:nextFocusUp="@id/driver_temp_select"
+            android:background="@drawable/gridview_item_select">
+            <TextView
+                android:id="@+id/tv_back_row"
+                android:layout_width="120px"
+                android:layout_height="80px"
+                android:layout_gravity="center"
+                android:contentDescription="@string/hvac_back_raw"
+                android:gravity="center"
+                android:text="@string/hvac_back_raw"
+                android:textColor="@color/text_color_normals"
+                android:textSize="36px" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_co_wind_direction"
+        android:layout_width="632px"
+        android:layout_height="100px"
+        android:layout_marginRight="15px"
+        android:background="@mipmap/ivi_ac_control_bar_bg_2"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_tv_copilot_blow"
+            android:layout_width="120px"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="65px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@id/ll_tv_back_row"
+            android:nextFocusRight="@id/ll_wind_co_face"
+            android:nextFocusUp="@id/driver_temp_select"
+            android:background="@drawable/gridview_item_select">
+            <TextView
+                android:id="@+id/tv_copilot_blow"
+                android:layout_width="120px"
+                android:layout_height="80px"
+                android:layout_gravity="center"
+                android:background="@drawable/gridview_item_select"
+                android:contentDescription="@string/hvac_direct_blow"
+                android:gravity="center"
+                android:text="@string/hvac_direct_blow"
+                android:textColor="@color/text_color_normals"
+                android:textSize="34px" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="32px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50px"
+            android:background="@color/c10ffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll_wind_co_face"
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="90px"
+            android:background="@drawable/gridview_item_select"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@id/ll_tv_copilot_blow"
+            android:nextFocusRight="@id/ll_wind_co_feet"
+            android:nextFocusUp="@id/driver_temp_select">
+
+            <CheckBox
+                android:id="@+id/cb_wind_co_face"
+                style="@style/HVACCheckbox56"
+                android:background="@drawable/cb_wind_co_face" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wind_co_feet"
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="104px"
+            android:background="@drawable/gridview_item_select"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@id/ll_wind_co_face"
+            android:nextFocusRight="@id/driver_temp_select"
+            android:nextFocusUp="@id/driver_temp_select">
+
+            <CheckBox
+                android:id="@+id/cb_wind_co_feet"
+                style="@style/HVACCheckbox56"
+                android:background="@drawable/cb_wind_co_feet" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

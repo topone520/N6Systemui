@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hvac_scroll_layout"
+    android:layout_width="0px"
+    android:layout_height="0px"
+    android:layout_alignParentBottom="true"
+    android:background="@color/transparent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:visibility_height="0px">
+
+    <ImageView
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:background="@color/hvac_bg_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c242b39">
+
+        <com.adayo.systemui.functional.hvac._view.VtpHvacViewGroup
+            android:id="@+id/hvac_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.adayo.systemui.functional.fragrance._view.VtpFragranceViewFragment
+            android:id="@+id/fragrance_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <com.adayo.systemui.functional.seat._view.VtpSeatViewFragment
+            android:id="@+id/seat_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

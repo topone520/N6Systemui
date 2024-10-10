@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- seekbar_thumb.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/hvac_white" /> <!-- 滑块的颜色 -->
+    <corners android:radius="90px"/>
+    <size android:width="32px" android:height="32px" /> <!-- 滑块的宽度和高度 -->
+</shape>

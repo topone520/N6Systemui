@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/la_recently_parent"
+    android:layout_width="122px"
+    android:layout_height="122px"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="PxUsage"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/gridview_item_select">
+
+    <ImageView
+        android:id="@+id/iv_recently_icon"
+        android:layout_width="88px"
+        android:layout_height="88px"
+        android:src="@mipmap/ivi_home_allapp_folder_icon_120" />
+
+</LinearLayout>

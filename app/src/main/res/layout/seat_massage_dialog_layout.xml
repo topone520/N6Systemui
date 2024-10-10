@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="2728px"
+    android:layout_height="680px"
+    android:background="@drawable/comm_c2d3540_bg"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:text="@string/seat_massage_adjust"
+        android:textColor="@color/hvac_title_color"
+        android:textFontWeight="400"
+        android:textSize="40px" />
+
+    <RelativeLayout
+        android:layout_width="1104px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="126px"
+        android:layout_marginTop="134px">
+
+        <TextView
+            android:id="@+id/tv_left_massage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/driver_seat_massage_adjust"
+            android:textColor="@color/hvac_title_color1"
+            android:textFontWeight="400"
+            android:textSize="36px" />
+
+        <com.adayo.systemui.windows.views.seat.SeatMassageLevelView
+            android:id="@+id/left_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_below="@+id/tv_left_massage"
+            android:layout_marginTop="24px" />
+
+        <TextView
+            android:id="@+id/tv_select_move_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/left_radio_group"
+            android:layout_marginTop="64px"
+            android:text="@string/select_open_massage_mode"
+            android:textColor="@color/text_color_select3"
+            android:textFontWeight="400"
+            android:textSize="30px" />
+
+        <com.adayo.systemui.windows.views.seat.SeatMassageModeView
+            android:id="@+id/left_seat_massage_rlv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_select_move_left" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="1104px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="134px"
+        android:layout_marginRight="126px">
+
+        <TextView
+            android:id="@+id/tv_right_massage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/right_radio_group"
+            android:text="@string/copilot_seat_massage_adjust"
+            android:textColor="@color/hvac_title_color1"
+            android:textFontWeight="400"
+            android:textSize="36px" />
+
+        <com.adayo.systemui.windows.views.seat.SeatMassageLevelView
+            android:id="@+id/right_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_below="@+id/tv_right_massage"
+            android:layout_marginTop="24px" />
+
+        <TextView
+            android:id="@+id/tv_select_move_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/right_radio_group"
+            android:layout_alignRight="@+id/right_radio_group"
+            android:layout_marginTop="64px"
+            android:text="@string/select_open_massage_mode"
+            android:textColor="@color/text_color_select3"
+            android:textFontWeight="400"
+            android:textSize="30px" />
+
+        <com.adayo.systemui.windows.views.seat.SeatMassageModeView
+            android:id="@+id/right_seat_massage_rlv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_select_move_right" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

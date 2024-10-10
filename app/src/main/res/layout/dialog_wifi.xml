@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="800px"
+    android:layout_height="640px"
+    android:background="@drawable/dialog_negative_bg"
+    tools:ignore="PxUsage">
+
+    <RelativeLayout
+        android:layout_width="672px"
+        android:layout_height="140px"
+        android:layout_marginStart="64px"
+        android:layout_marginTop="20px">
+
+        <com.adayo.systemui.windows.views.SwitchButtonVe
+            android:id="@+id/btn_wifi_switch"
+            android:layout_width="64px"
+            android:layout_height="36px"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="88px"
+            android:text="@string/screen_wifi"
+            android:textColor="@color/c_FF_FF"
+            android:textFontWeight="500"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/tv_wifi_more_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/iv_wifi_set_more"
+            android:text="@string/screen_bluetooth_more"
+            android:textColor="@color/c_FF_FF"
+            android:textFontWeight="400"
+            android:textSize="32px"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:id="@+id/iv_wifi_set_more"
+            android:layout_width="56px"
+            android:layout_height="56px"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ivi_menu_down_icon_pull_down_n"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:layout_width="672px"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#ff53647A" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_dialog_wifi"
+        android:layout_width="672px"
+        android:layout_height="450px"
+        android:layout_marginStart="64px"
+        android:layout_marginTop="176px" />
+
+</FrameLayout>

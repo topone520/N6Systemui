@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <SeekBar
+        android:id="@+id/hor_bar"
+        android:layout_width="480px"
+        android:layout_height="8px"
+        android:layout_marginLeft="264px"
+        android:layout_marginTop="54px"
+        android:maxHeight="8px"
+        android:progressDrawable="@color/c414a55"
+        android:thumb="@drawable/seekbar_outlet_thumb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.adayo.systemui.windows.views.hvac.VerticalSeekBar
+        android:id="@+id/ver_bar"
+        android:layout_width="8px"
+        android:layout_height="400px"
+        android:layout_marginLeft="160px"
+        android:layout_marginTop="94px"
+        android:maxWidth="10px"
+        app:thumb_color="@color/c34c6dc"
+        app:button_width="64px"
+        app:progressbar_on_color="@color/c414a55"
+        app:progressbar_color="@color/c414a55"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

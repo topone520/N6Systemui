@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven {
+            url 'https://www.jitpack.io'
+            }
+//        maven {
+//            allowInsecureProtocol = true
+//            url 'http://172.16.110.95:8082/artifactory/virtual_repo_maven_adayo/' }
+        jcenter()
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://www.jitpack.io' }
+//        maven {
+//            allowInsecureProtocol = true
+//            url 'http://172.16.110.95:8082/artifactory/virtual_repo_maven_adayo/' }
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "N6 SystemUI"
+include ':app'

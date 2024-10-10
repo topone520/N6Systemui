@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hvac_white">
+
+    <ImageView
+        android:id="@+id/fragrance_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ivi_ac_fragrance_bg_bule1" />
+
+    <ImageView
+        android:id="@+id/iv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ivi_ac_btn_fragrance_name1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.adayo.systemui.windows.views.fragrance.ChannelView
+        android:id="@+id/channel_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="310px"
+        android:layout_marginTop="140px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <include-->
+    <!--        android:id="@+id/frag_system_error_view"-->
+    <!--        layout="@layout/fragrance_system_error_layout"-->
+    <!--        android:visibility="gone" />-->
+
+    <!--    <include-->
+    <!--        android:id="@+id/frag_lin_error_view"-->
+    <!--        layout="@layout/fragrance_lin_error_layout"-->
+    <!--        android:visibility="visible" />-->
+
+    <include
+        android:id="@+id/frag_system_error_view"
+        layout="@layout/fragrance_system_error_layout"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivi_seat_close"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_marginLeft="124px"
+        android:layout_marginTop="3px"
+        android:padding="60px"
+        android:rotation="90"
+        android:src="@mipmap/ivi_ac_icon_close_n"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
